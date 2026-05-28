@@ -1,0 +1,55 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test25'. All responses will be logged to 'test25.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test25/test25.v' successfully.
+  Cells: 1149
+  Primary inputs:  n0, n1, n10, n10[1], n2, n2[1], n2[2], n2[3], n2[4], n2[5], n2[6], n2[7], n3, n3[1], n3[2], n3[3], n3[4], n3[5], n3[6], n3[7], n4, n4[1], n4[2], n4[3], n4[4], n4[5], n4[6], n4[7], n5, n5[1], n5[2], n5[3], ... (14 more)
+  Primary outputs: n18[0], n18[1], n18[2], n18[3], n18[4], n18[5], n18[6], n18[7], n11[0], n11[1], n11[2], n11[3], n14[0], n14[1], n14[2], n14[3], n14[4], n14[5], n14[6], n14[7], n15[0], n15[1], n15[2], n15[3], n15[4], n15[5], n15[6], n15[7], n16[0], n16[1], n16[2], n16[3], ... (20 more)
+  Gate breakdown:  {'and': 342, 'dff': 56, 'not': 511, 'or': 217, 'xor': 23}
+#END 2
+#RESPONSE 3
+OK: Total gates: 1149
+Gate breakdown:
+  AND  : 342
+  OR   : 217
+  NOT  : 511
+  NAND : 0
+  NOR  : 0
+  XOR  : 23
+  XNOR : 0
+  BUF  : 0
+  DFF  : 56
+#END 3
+#RESPONSE 4
+OK: Performed whole-design depth cleanup/restructuring pass: constant simplifications=0, collapsed NOT-NOT pairs=0, merged structural duplicates=3, cone optimizations tried=6, depth-improved cones=0. Maximum combinational depth: 63 -> 63.
+#END 4
+#RESPONSE 5
+OK: Floating/unconnected signal check: 0 floating input(s), 14 unconnected output(s).
+  [NOT] $not$testcase/test25/test25.v:117$29 鈫?n644
+  [NOT] $not$testcase/test25/test25.v:120$33 鈫?n642
+  [NOT] $not$testcase/test25/test25.v:127$44 鈫?n635
+  [NOT] $not$testcase/test25/test25.v:129$46 鈫?n633
+  [NOT] $not$testcase/test25/test25.v:143$66 鈫?n624
+  [NOT] $not$testcase/test25/test25.v:159$91 鈫?n606
+  [NOT] $not$testcase/test25/test25.v:239$219 鈫?n525
+  [NOT] $not$testcase/test25/test25.v:247$233 鈫?n516
+  [NOT] $not$testcase/test25/test25.v:256$250 鈫?n503
+  [NOT] $not$testcase/test25/test25.v:273$270 鈫?n498
+  [NOT] $not$testcase/test25/test25.v:760$966 鈫?n39
+  [NOT] $not$testcase/test25/test25.v:767$979 鈫?n46
+  [NOT] $not$testcase/test25/test25.v:774$992 鈫?n60
+  [NOT] $not$testcase/test25/test25.v:781$1005 鈫?n53
+#END 5
+#RESPONSE 6
+OK: Not found: Gate 'g0' was not found.
+#END 6
+#RESPONSE 7
+OK: Renamed wire 'n74' to 'renamed_wire'.
+#END 7
+#RESPONSE 8
+OK: No remaining 2-input OR gates were found in cone of 'n11[0]'; converted 217 OR gate(s) elsewhere to NAND/NOT form. The design now contains 217 NAND gate(s).
+#END 8
+#RESPONSE 9
+OK: Design written to 'test25_out.v' successfully.
+#END 9

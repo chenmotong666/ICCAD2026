@@ -1,0 +1,35 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test45'. All responses will be logged to 'test45.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test45/test45.v' successfully.
+  Cells: 31
+  Primary inputs:  n0, n1, n2, n3, n4, n5, n6, n7, n8
+  Primary outputs: n20, n22, n21, n31, n32, n23
+  Gate breakdown:  {'and': 11, 'dff': 2, 'not': 8, 'or': 6, 'xor': 4}
+#END 2
+#RESPONSE 3
+OK: Total gates: 31
+Gate breakdown:
+  AND  : 11
+  OR   : 6
+  NOT  : 8
+  NAND : 0
+  NOR  : 0
+  XOR  : 4
+  XNOR : 0
+  BUF  : 0
+  DFF  : 2
+#END 3
+#RESPONSE 4
+OK: No AND gates with constant 0 input found.
+#END 4
+#RESPONSE 5
+OK: Eliminated 7 gate(s) by local constant propagation (constant rewrites=0, dangling cleanup=7).
+#END 5
+#RESPONSE 6
+OK: constant_gates_eliminated: 7
+#END 6
+#RESPONSE 7
+OK: Design written to 'testcase/test45/test45_out.v' successfully.
+#END 7

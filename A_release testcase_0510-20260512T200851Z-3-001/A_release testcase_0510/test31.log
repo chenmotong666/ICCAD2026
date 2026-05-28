@@ -1,0 +1,511 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test31'. All responses will be logged to 'test31.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test31/test31.v' successfully.
+  Cells: 10389
+  Primary inputs:  n0, n1, n10, n10[1], n10[2], n10[3], n10[4], n2, n3, n4, n5, n5[10], n5[11], n5[12], n5[13], n5[14], n5[15], n5[16], n5[17], n5[18], n5[19], n5[1], n5[20], n5[21], n5[22], n5[23], n5[24], n5[2], n5[3], n5[4], n5[5], n5[6], ... (103 more)
+  Primary outputs: n13[0], n13[3], n13[6], n13[5], n13[4], n13[7], n13[24], n13[29], n13[30], n13[20], n13[19], n13[28], n13[18], n13[25], n13[17], n13[26], n13[16], n13[31], n13[23], n13[27], n13[22], n13[21], n13[1], n13[2], n13[10], n13[8], n13[11], n13[12], n13[9], n13[15], n13[14], n13[13], ... (160 more)
+  Gate breakdown:  {'and': 3726, 'dff': 844, 'not': 4704, 'or': 789, 'xor': 326}
+#END 2
+#RESPONSE 3
+OK: Total gates: 10389
+Gate breakdown:
+  AND  : 3726
+  OR   : 789
+  NOT  : 4704
+  NAND : 0
+  NOR  : 0
+  XOR  : 326
+  XNOR : 0
+  BUF  : 0
+  DFF  : 844
+#END 3
+#RESPONSE 4
+OK: Transitive fanout cone of 'n2' contains 759 gate(s).
+Gate breakdown: {'and': 307, 'dff': 100, 'not': 325, 'or': 27}
+  [AND] $and$testcase/test31/test31.v:2623$2062 鈫?$and$testcase/test31/test31.v:2623$2062_Y
+  [AND] $and$testcase/test31/test31.v:2624$2064 鈫?$and$testcase/test31/test31.v:2624$2064_Y
+  [AND] $and$testcase/test31/test31.v:2625$2066 鈫?$and$testcase/test31/test31.v:2625$2066_Y
+  [AND] $and$testcase/test31/test31.v:2626$2068 鈫?$and$testcase/test31/test31.v:2626$2068_Y
+  [AND] $and$testcase/test31/test31.v:2764$2340 鈫?$and$testcase/test31/test31.v:2764$2340_Y
+  [AND] $and$testcase/test31/test31.v:2771$2353 鈫?$and$testcase/test31/test31.v:2771$2353_Y
+  [AND] $and$testcase/test31/test31.v:2838$2483 鈫?$and$testcase/test31/test31.v:2838$2483_Y
+  [AND] $and$testcase/test31/test31.v:2839$2485 鈫?$and$testcase/test31/test31.v:2839$2485_Y
+  [AND] $and$testcase/test31/test31.v:2857$2511 鈫?$and$testcase/test31/test31.v:2857$2511_Y
+  [AND] $and$testcase/test31/test31.v:2858$2513 鈫?$and$testcase/test31/test31.v:2858$2513_Y
+  [AND] $and$testcase/test31/test31.v:2864$2522 鈫?$and$testcase/test31/test31.v:2864$2522_Y
+  [AND] $and$testcase/test31/test31.v:2870$2534 鈫?$and$testcase/test31/test31.v:2870$2534_Y
+  [AND] $and$testcase/test31/test31.v:2871$2536 鈫?$and$testcase/test31/test31.v:2871$2536_Y
+  [AND] $and$testcase/test31/test31.v:2872$2538 鈫?$and$testcase/test31/test31.v:2872$2538_Y
+  [AND] $and$testcase/test31/test31.v:2873$2540 鈫?$and$testcase/test31/test31.v:2873$2540_Y
+  [AND] $and$testcase/test31/test31.v:2878$2549 鈫?$and$testcase/test31/test31.v:2878$2549_Y
+  [AND] $and$testcase/test31/test31.v:2879$2551 鈫?$and$testcase/test31/test31.v:2879$2551_Y
+  [AND] $and$testcase/test31/test31.v:2881$2555 鈫?$and$testcase/test31/test31.v:2881$2555_Y
+  [AND] $and$testcase/test31/test31.v:3088$2849 鈫?$and$testcase/test31/test31.v:3088$2849_Y
+  [AND] $and$testcase/test31/test31.v:3194$3059 鈫?$and$testcase/test31/test31.v:3194$3059_Y
+  [AND] $and$testcase/test31/test31.v:3304$3279 鈫?$and$testcase/test31/test31.v:3304$3279_Y
+  [AND] $and$testcase/test31/test31.v:3305$3281 鈫?$and$testcase/test31/test31.v:3305$3281_Y
+  [AND] $and$testcase/test31/test31.v:3307$3285 鈫?$and$testcase/test31/test31.v:3307$3285_Y
+  [AND] $and$testcase/test31/test31.v:3308$3287 鈫?$and$testcase/test31/test31.v:3308$3287_Y
+  [AND] $and$testcase/test31/test31.v:3309$3289 鈫?$and$testcase/test31/test31.v:3309$3289_Y
+  [AND] $and$testcase/test31/test31.v:3310$3291 鈫?$and$testcase/test31/test31.v:3310$3291_Y
+  [AND] $and$testcase/test31/test31.v:3311$3293 鈫?$and$testcase/test31/test31.v:3311$3293_Y
+  [AND] $and$testcase/test31/test31.v:3312$3295 鈫?$and$testcase/test31/test31.v:3312$3295_Y
+  [AND] $and$testcase/test31/test31.v:3313$3297 鈫?$and$testcase/test31/test31.v:3313$3297_Y
+  [AND] $and$testcase/test31/test31.v:3314$3299 鈫?$and$testcase/test31/test31.v:3314$3299_Y
+  [AND] $and$testcase/test31/test31.v:3315$3301 鈫?$and$testcase/test31/test31.v:3315$3301_Y
+  [AND] $and$testcase/test31/test31.v:3316$3303 鈫?$and$testcase/test31/test31.v:3316$3303_Y
+  [AND] $and$testcase/test31/test31.v:3317$3305 鈫?$and$testcase/test31/test31.v:3317$3305_Y
+  [AND] $and$testcase/test31/test31.v:3318$3307 鈫?$and$testcase/test31/test31.v:3318$3307_Y
+  [AND] $and$testcase/test31/test31.v:3319$3309 鈫?$and$testcase/test31/test31.v:3319$3309_Y
+  [AND] $and$testcase/test31/test31.v:3408$3487 鈫?$and$testcase/test31/test31.v:3408$3487_Y
+  [AND] $and$testcase/test31/test31.v:3421$3510 鈫?$and$testcase/test31/test31.v:3421$3510_Y
+  [AND] $and$testcase/test31/test31.v:3422$3512 鈫?$and$testcase/test31/test31.v:3422$3512_Y
+  [AND] $and$testcase/test31/test31.v:3423$3514 鈫?$and$testcase/test31/test31.v:3423$3514_Y
+  [AND] $and$testcase/test31/test31.v:3425$3518 鈫?$and$testcase/test31/test31.v:3425$3518_Y
+  [AND] $and$testcase/test31/test31.v:3426$3520 鈫?$and$testcase/test31/test31.v:3426$3520_Y
+  [AND] $and$testcase/test31/test31.v:3427$3522 鈫?$and$testcase/test31/test31.v:3427$3522_Y
+  [AND] $and$testcase/test31/test31.v:3428$3524 鈫?$and$testcase/test31/test31.v:3428$3524_Y
+  [AND] $and$testcase/test31/test31.v:3429$3526 鈫?$and$testcase/test31/test31.v:3429$3526_Y
+  [AND] $and$testcase/test31/test31.v:3430$3528 鈫?$and$testcase/test31/test31.v:3430$3528_Y
+  [AND] $and$testcase/test31/test31.v:3431$3530 鈫?$and$testcase/test31/test31.v:3431$3530_Y
+  [AND] $and$testcase/test31/test31.v:3432$3532 鈫?$and$testcase/test31/test31.v:3432$3532_Y
+  [AND] $and$testcase/test31/test31.v:3433$3534 鈫?$and$testcase/test31/test31.v:3433$3534_Y
+  [AND] $and$testcase/test31/test31.v:3434$3536 鈫?$and$testcase/test31/test31.v:3434$3536_Y
+  [AND] $and$testcase/test31/test31.v:3435$3538 鈫?$and$testcase/test31/test31.v:3435$3538_Y
+  [AND] $and$testcase/test31/test31.v:3436$3540 鈫?$and$testcase/test31/test31.v:3436$3540_Y
+  [AND] $and$testcase/test31/test31.v:3437$3542 鈫?$and$testcase/test31/test31.v:3437$3542_Y
+  [AND] $and$testcase/test31/test31.v:3438$3544 鈫?$and$testcase/test31/test31.v:3438$3544_Y
+  [AND] $and$testcase/test31/test31.v:3439$3546 鈫?$and$testcase/test31/test31.v:3439$3546_Y
+  [AND] $and$testcase/test31/test31.v:3440$3548 鈫?$and$testcase/test31/test31.v:3440$3548_Y
+  [AND] $and$testcase/test31/test31.v:3441$3550 鈫?$and$testcase/test31/test31.v:3441$3550_Y
+  [AND] $and$testcase/test31/test31.v:3442$3552 鈫?$and$testcase/test31/test31.v:3442$3552_Y
+  [AND] $and$testcase/test31/test31.v:3530$3728 鈫?$and$testcase/test31/test31.v:3530$3728_Y
+  [AND] $and$testcase/test31/test31.v:3531$3730 鈫?$and$testcase/test31/test31.v:3531$3730_Y
+  [AND] $and$testcase/test31/test31.v:3532$3732 鈫?$and$testcase/test31/test31.v:3532$3732_Y
+  [AND] $and$testcase/test31/test31.v:3533$3734 鈫?$and$testcase/test31/test31.v:3533$3734_Y
+  [AND] $and$testcase/test31/test31.v:3534$3736 鈫?$and$testcase/test31/test31.v:3534$3736_Y
+  [AND] $and$testcase/test31/test31.v:3535$3738 鈫?$and$testcase/test31/test31.v:3535$3738_Y
+  [AND] $and$testcase/test31/test31.v:3536$3740 鈫?$and$testcase/test31/test31.v:3536$3740_Y
+  [AND] $and$testcase/test31/test31.v:3537$3742 鈫?$and$testcase/test31/test31.v:3537$3742_Y
+  [AND] $and$testcase/test31/test31.v:3538$3744 鈫?$and$testcase/test31/test31.v:3538$3744_Y
+  [AND] $and$testcase/test31/test31.v:3539$3746 鈫?$and$testcase/test31/test31.v:3539$3746_Y
+  [AND] $and$testcase/test31/test31.v:3540$3748 鈫?$and$testcase/test31/test31.v:3540$3748_Y
+  [AND] $and$testcase/test31/test31.v:3541$3750 鈫?$and$testcase/test31/test31.v:3541$3750_Y
+  [AND] $and$testcase/test31/test31.v:3542$3752 鈫?$and$testcase/test31/test31.v:3542$3752_Y
+  [AND] $and$testcase/test31/test31.v:3543$3754 鈫?$and$testcase/test31/test31.v:3543$3754_Y
+  [AND] $and$testcase/test31/test31.v:3544$3756 鈫?$and$testcase/test31/test31.v:3544$3756_Y
+  [AND] $and$testcase/test31/test31.v:3545$3758 鈫?$and$testcase/test31/test31.v:3545$3758_Y
+  [AND] $and$testcase/test31/test31.v:3546$3760 鈫?$and$testcase/test31/test31.v:3546$3760_Y
+  [AND] $and$testcase/test31/test31.v:3547$3762 鈫?$and$testcase/test31/test31.v:3547$3762_Y
+  [AND] $and$testcase/test31/test31.v:3551$3768 鈫?$and$testcase/test31/test31.v:3551$3768_Y
+  [AND] $and$testcase/test31/test31.v:3552$3770 鈫?$and$testcase/test31/test31.v:3552$3770_Y
+  [AND] $and$testcase/test31/test31.v:3553$3772 鈫?$and$testcase/test31/test31.v:3553$3772_Y
+  [AND] $and$testcase/test31/test31.v:3555$3776 鈫?$and$testcase/test31/test31.v:3555$3776_Y
+  [AND] $and$testcase/test31/test31.v:3557$3780 鈫?$and$testcase/test31/test31.v:3557$3780_Y
+  [AND] $and$testcase/test31/test31.v:3558$3782 鈫?$and$testcase/test31/test31.v:3558$3782_Y
+  [AND] $and$testcase/test31/test31.v:3560$3786 鈫?$and$testcase/test31/test31.v:3560$3786_Y
+  [AND] $and$testcase/test31/test31.v:3561$3788 鈫?$and$testcase/test31/test31.v:3561$3788_Y
+  [AND] $and$testcase/test31/test31.v:3563$3792 鈫?$and$testcase/test31/test31.v:3563$3792_Y
+  [AND] $and$testcase/test31/test31.v:3564$3794 鈫?$and$testcase/test31/test31.v:3564$3794_Y
+  [AND] $and$testcase/test31/test31.v:3565$3796 鈫?$and$testcase/test31/test31.v:3565$3796_Y
+  [AND] $and$testcase/test31/test31.v:3568$3802 鈫?$and$testcase/test31/test31.v:3568$3802_Y
+  [AND] $and$testcase/test31/test31.v:3570$3806 鈫?$and$testcase/test31/test31.v:3570$3806_Y
+  [AND] $and$testcase/test31/test31.v:3571$3808 鈫?$and$testcase/test31/test31.v:3571$3808_Y
+  [AND] $and$testcase/test31/test31.v:3572$3810 鈫?$and$testcase/test31/test31.v:3572$3810_Y
+  [AND] $and$testcase/test31/test31.v:3575$3816 鈫?$and$testcase/test31/test31.v:3575$3816_Y
+  [AND] $and$testcase/test31/test31.v:3576$3818 鈫?$and$testcase/test31/test31.v:3576$3818_Y
+  [AND] $and$testcase/test31/test31.v:3578$3822 鈫?$and$testcase/test31/test31.v:3578$3822_Y
+  [AND] $and$testcase/test31/test31.v:3579$3824 鈫?$and$testcase/test31/test31.v:3579$3824_Y
+  [AND] $and$testcase/test31/test31.v:3581$3828 鈫?$and$testcase/test31/test31.v:3581$3828_Y
+  [AND] $and$testcase/test31/test31.v:3582$3830 鈫?$and$testcase/test31/test31.v:3582$3830_Y
+  [AND] $and$testcase/test31/test31.v:3584$3834 鈫?$and$testcase/test31/test31.v:3584$3834_Y
+  [AND] $and$testcase/test31/test31.v:3585$3836 鈫?$and$testcase/test31/test31.v:3585$3836_Y
+  [AND] $and$testcase/test31/test31.v:3586$3838 鈫?$and$testcase/test31/test31.v:3586$3838_Y
+  [AND] $and$testcase/test31/test31.v:3589$3844 鈫?$and$testcase/test31/test31.v:3589$3844_Y
+  [AND] $and$testcase/test31/test31.v:3590$3846 鈫?$and$testcase/test31/test31.v:3590$3846_Y
+  [AND] $and$testcase/test31/test31.v:3591$3848 鈫?$and$testcase/test31/test31.v:3591$3848_Y
+  [AND] $and$testcase/test31/test31.v:3593$3852 鈫?$and$testcase/test31/test31.v:3593$3852_Y
+  [AND] $and$testcase/test31/test31.v:3595$3856 鈫?$and$testcase/test31/test31.v:3595$3856_Y
+  [AND] $and$testcase/test31/test31.v:3596$3858 鈫?$and$testcase/test31/test31.v:3596$3858_Y
+  [AND] $and$testcase/test31/test31.v:3597$3860 鈫?$and$testcase/test31/test31.v:3597$3860_Y
+  [AND] $and$testcase/test31/test31.v:3599$3864 鈫?$and$testcase/test31/test31.v:3599$3864_Y
+  [AND] $and$testcase/test31/test31.v:3600$3866 鈫?$and$testcase/test31/test31.v:3600$3866_Y
+  [AND] $and$testcase/test31/test31.v:3602$3870 鈫?$and$testcase/test31/test31.v:3602$3870_Y
+  [AND] $and$testcase/test31/test31.v:3604$3874 鈫?$and$testcase/test31/test31.v:3604$3874_Y
+  [AND] $and$testcase/test31/test31.v:3605$3876 鈫?$and$testcase/test31/test31.v:3605$3876_Y
+  [AND] $and$testcase/test31/test31.v:3607$3880 鈫?$and$testcase/test31/test31.v:3607$3880_Y
+  [AND] $and$testcase/test31/test31.v:3609$3884 鈫?$and$testcase/test31/test31.v:3609$3884_Y
+  [AND] $and$testcase/test31/test31.v:3711$4088 鈫?$and$testcase/test31/test31.v:3711$4088_Y
+  [AND] $and$testcase/test31/test31.v:3758$4181 鈫?$and$testcase/test31/test31.v:3758$4181_Y
+  [AND] $and$testcase/test31/test31.v:3759$4183 鈫?$and$testcase/test31/test31.v:3759$4183_Y
+  [AND] $and$testcase/test31/test31.v:3760$4185 鈫?$and$testcase/test31/test31.v:3760$4185_Y
+  [AND] $and$testcase/test31/test31.v:3761$4187 鈫?$and$testcase/test31/test31.v:3761$4187_Y
+  [AND] $and$testcase/test31/test31.v:3762$4189 鈫?$and$testcase/test31/test31.v:3762$4189_Y
+  [AND] $and$testcase/test31/test31.v:3763$4191 鈫?$and$testcase/test31/test31.v:3763$4191_Y
+  [AND] $and$testcase/test31/test31.v:3764$4193 鈫?$and$testcase/test31/test31.v:3764$4193_Y
+  [AND] $and$testcase/test31/test31.v:3765$4195 鈫?$and$testcase/test31/test31.v:3765$4195_Y
+  [AND] $and$testcase/test31/test31.v:3766$4197 鈫?$and$testcase/test31/test31.v:3766$4197_Y
+  [AND] $and$testcase/test31/test31.v:3767$4199 鈫?$and$testcase/test31/test31.v:3767$4199_Y
+  [AND] $and$testcase/test31/test31.v:3768$4201 鈫?$and$testcase/test31/test31.v:3768$4201_Y
+  [AND] $and$testcase/test31/test31.v:3769$4203 鈫?$and$testcase/test31/test31.v:3769$4203_Y
+  [AND] $and$testcase/test31/test31.v:3770$4205 鈫?$and$testcase/test31/test31.v:3770$4205_Y
+  [AND] $and$testcase/test31/test31.v:3771$4207 鈫?$and$testcase/test31/test31.v:3771$4207_Y
+  [AND] $and$testcase/test31/test31.v:3772$4209 鈫?$and$testcase/test31/test31.v:3772$4209_Y
+  [AND] $and$testcase/test31/test31.v:3773$4211 鈫?$and$testcase/test31/test31.v:3773$4211_Y
+  [AND] $and$testcase/test31/test31.v:3918$4490 鈫?$and$testcase/test31/test31.v:3918$4490_Y
+  [AND] $and$testcase/test31/test31.v:3931$4516 鈫?$and$testcase/test31/test31.v:3931$4516_Y
+  [AND] $and$testcase/test31/test31.v:3947$4548 鈫?$and$testcase/test31/test31.v:3947$4548_Y
+  [AND] $and$testcase/test31/test31.v:3948$4550 鈫?$and$testcase/test31/test31.v:3948$4550_Y
+  [AND] $and$testcase/test31/test31.v:3949$4552 鈫?$and$testcase/test31/test31.v:3949$4552_Y
+  [AND] $and$testcase/test31/test31.v:3950$4554 鈫?$and$testcase/test31/test31.v:3950$4554_Y
+  [AND] $and$testcase/test31/test31.v:3951$4556 鈫?$and$testcase/test31/test31.v:3951$4556_Y
+  [AND] $and$testcase/test31/test31.v:3952$4558 鈫?$and$testcase/test31/test31.v:3952$4558_Y
+  [AND] $and$testcase/test31/test31.v:3953$4560 鈫?$and$testcase/test31/test31.v:3953$4560_Y
+  [AND] $and$testcase/test31/test31.v:3954$4562 鈫?$and$testcase/test31/test31.v:3954$4562_Y
+  [AND] $and$testcase/test31/test31.v:3955$4564 鈫?$and$testcase/test31/test31.v:3955$4564_Y
+  [AND] $and$testcase/test31/test31.v:3956$4566 鈫?$and$testcase/test31/test31.v:3956$4566_Y
+  [AND] $and$testcase/test31/test31.v:3957$4568 鈫?$and$testcase/test31/test31.v:3957$4568_Y
+  [AND] $and$testcase/test31/test31.v:3958$4570 鈫?$and$testcase/test31/test31.v:3958$4570_Y
+  [AND] $and$testcase/test31/test31.v:3959$4572 鈫?$and$testcase/test31/test31.v:3959$4572_Y
+  [AND] $and$testcase/test31/test31.v:3960$4574 鈫?$and$testcase/test31/test31.v:3960$4574_Y
+  [AND] $and$testcase/test31/test31.v:3962$4578 鈫?$and$testcase/test31/test31.v:3962$4578_Y
+  [AND] $and$testcase/test31/test31.v:4032$4718 鈫?$and$testcase/test31/test31.v:4032$4718_Y
+  [AND] $and$testcase/test31/test31.v:4035$4724 鈫?$and$testcase/test31/test31.v:4035$4724_Y
+  [AND] $and$testcase/test31/test31.v:4036$4726 鈫?$and$testcase/test31/test31.v:4036$4726_Y
+  [AND] $and$testcase/test31/test31.v:4037$4728 鈫?$and$testcase/test31/test31.v:4037$4728_Y
+  [AND] $and$testcase/test31/test31.v:4038$4730 鈫?$and$testcase/test31/test31.v:4038$4730_Y
+  [AND] $and$testcase/test31/test31.v:4039$4732 鈫?$and$testcase/test31/test31.v:4039$4732_Y
+  [AND] $and$testcase/test31/test31.v:4040$4734 鈫?$and$testcase/test31/test31.v:4040$4734_Y
+  [AND] $and$testcase/test31/test31.v:4041$4736 鈫?$and$testcase/test31/test31.v:4041$4736_Y
+  [AND] $and$testcase/test31/test31.v:4042$4738 鈫?$and$testcase/test31/test31.v:4042$4738_Y
+  [AND] $and$testcase/test31/test31.v:4043$4740 鈫?$and$testcase/test31/test31.v:4043$4740_Y
+  [AND] $and$testcase/test31/test31.v:4044$4742 鈫?$and$testcase/test31/test31.v:4044$4742_Y
+  [AND] $and$testcase/test31/test31.v:4045$4744 鈫?$and$testcase/test31/test31.v:4045$4744_Y
+  [AND] $and$testcase/test31/test31.v:4046$4746 鈫?$and$testcase/test31/test31.v:4046$4746_Y
+  [AND] $and$testcase/test31/test31.v:4047$4748 鈫?$and$testcase/test31/test31.v:4047$4748_Y
+  [AND] $and$testcase/test31/test31.v:4048$4750 鈫?$and$testcase/test31/test31.v:4048$4750_Y
+  [AND] $and$testcase/test31/test31.v:4049$4752 鈫?$and$testcase/test31/test31.v:4049$4752_Y
+  [AND] $and$testcase/test31/test31.v:4050$4754 鈫?$and$testcase/test31/test31.v:4050$4754_Y
+  [AND] $and$testcase/test31/test31.v:4052$4758 鈫?$and$testcase/test31/test31.v:4052$4758_Y
+  [AND] $and$testcase/test31/test31.v:4053$4760 鈫?$and$testcase/test31/test31.v:4053$4760_Y
+  [AND] $and$testcase/test31/test31.v:4054$4762 鈫?$and$testcase/test31/test31.v:4054$4762_Y
+  [AND] $and$testcase/test31/test31.v:4055$4764 鈫?$and$testcase/test31/test31.v:4055$4764_Y
+  [AND] $and$testcase/test31/test31.v:4056$4766 鈫?$and$testcase/test31/test31.v:4056$4766_Y
+  [AND] $and$testcase/test31/test31.v:4059$4772 鈫?$and$testcase/test31/test31.v:4059$4772_Y
+  [AND] $and$testcase/test31/test31.v:4060$4774 鈫?$and$testcase/test31/test31.v:4060$4774_Y
+  [AND] $and$testcase/test31/test31.v:4061$4776 鈫?$and$testcase/test31/test31.v:4061$4776_Y
+  [AND] $and$testcase/test31/test31.v:4062$4778 鈫?$and$testcase/test31/test31.v:4062$4778_Y
+  [AND] $and$testcase/test31/test31.v:4063$4780 鈫?$and$testcase/test31/test31.v:4063$4780_Y
+  [AND] $and$testcase/test31/test31.v:4065$4784 鈫?$and$testcase/test31/test31.v:4065$4784_Y
+  [AND] $and$testcase/test31/test31.v:4066$4786 鈫?$and$testcase/test31/test31.v:4066$4786_Y
+  [AND] $and$testcase/test31/test31.v:4067$4788 鈫?$and$testcase/test31/test31.v:4067$4788_Y
+  [AND] $and$testcase/test31/test31.v:4068$4790 鈫?$and$testcase/test31/test31.v:4068$4790_Y
+  [AND] $and$testcase/test31/test31.v:4069$4792 鈫?$and$testcase/test31/test31.v:4069$4792_Y
+  [AND] $and$testcase/test31/test31.v:4070$4794 鈫?$and$testcase/test31/test31.v:4070$4794_Y
+  [AND] $and$testcase/test31/test31.v:4071$4796 鈫?$and$testcase/test31/test31.v:4071$4796_Y
+  [AND] $and$testcase/test31/test31.v:4072$4798 鈫?$and$testcase/test31/test31.v:4072$4798_Y
+  [AND] $and$testcase/test31/test31.v:4073$4800 鈫?$and$testcase/test31/test31.v:4073$4800_Y
+  [AND] $and$testcase/test31/test31.v:4074$4802 鈫?$and$testcase/test31/test31.v:4074$4802_Y
+  [AND] $and$testcase/test31/test31.v:4075$4804 鈫?$and$testcase/test31/test31.v:4075$4804_Y
+  [AND] $and$testcase/test31/test31.v:4076$4806 鈫?$and$testcase/test31/test31.v:4076$4806_Y
+  [AND] $and$testcase/test31/test31.v:4077$4808 鈫?$and$testcase/test31/test31.v:4077$4808_Y
+  [AND] $and$testcase/test31/test31.v:4078$4810 鈫?$and$testcase/test31/test31.v:4078$4810_Y
+  [AND] $and$testcase/test31/test31.v:4079$4812 鈫?$and$testcase/test31/test31.v:4079$4812_Y
+  [AND] $and$testcase/test31/test31.v:4080$4814 鈫?$and$testcase/test31/test31.v:4080$4814_Y
+  [AND] $and$testcase/test31/test31.v:4081$4816 鈫?$and$testcase/test31/test31.v:4081$4816_Y
+  [AND] $and$testcase/test31/test31.v:4082$4818 鈫?$and$testcase/test31/test31.v:4082$4818_Y
+  [AND] $and$testcase/test31/test31.v:4083$4820 鈫?$and$testcase/test31/test31.v:4083$4820_Y
+  [AND] $and$testcase/test31/test31.v:4084$4822 鈫?$and$testcase/test31/test31.v:4084$4822_Y
+  [AND] $and$testcase/test31/test31.v:4085$4824 鈫?$and$testcase/test31/test31.v:4085$4824_Y
+  [AND] $and$testcase/test31/test31.v:4086$4826 鈫?$and$testcase/test31/test31.v:4086$4826_Y
+  [AND] $and$testcase/test31/test31.v:4087$4828 鈫?$and$testcase/test31/test31.v:4087$4828_Y
+  [AND] $and$testcase/test31/test31.v:4088$4830 鈫?$and$testcase/test31/test31.v:4088$4830_Y
+  [AND] $and$testcase/test31/test31.v:4089$4832 鈫?$and$testcase/test31/test31.v:4089$4832_Y
+  [AND] $and$testcase/test31/test31.v:4090$4834 鈫?$and$testcase/test31/test31.v:4090$4834_Y
+Result capped at 200 of 759 item(s).
+#END 4
+#RESPONSE 5
+OK: No inverter pair collapse was applicable; removed 42 dangling gate(s) during the cleanup pass.
+#END 5
+#RESPONSE 6
+OK: Current design is equivalent to the original by the recorded equivalence-preserving transformation rules applied in this session (10347 cell(s)).
+#END 6
+#RESPONSE 7
+OK: Net 'n0' has fanout 844.
+
+'n0' directly drives 844 gate(s).
+  [DFF] g1000 鈫?n57[0]
+  [DFF] g1001 鈫?n57[1]
+  [DFF] g1002 鈫?n57[2]
+  [DFF] g1003 鈫?n57[3]
+  [DFF] g1004 鈫?n57[4]
+  [DFF] g1005 鈫?n57[5]
+  [DFF] g1006 鈫?n57[6]
+  [DFF] g1007 鈫?n57[7]
+  [DFF] g1008 鈫?n57[8]
+  [DFF] g1009 鈫?n57[9]
+  [DFF] g1010 鈫?n57[10]
+  [DFF] g1011 鈫?n57[11]
+  [DFF] g1012 鈫?n57[12]
+  [DFF] g1013 鈫?n58[0]
+  [DFF] g1014 鈫?n58[1]
+  [DFF] g1015 鈫?n58[2]
+  [DFF] g1016 鈫?n58[3]
+  [DFF] g1017 鈫?n58[4]
+  [DFF] g1018 鈫?n58[5]
+  [DFF] g1019 鈫?n58[6]
+  [DFF] g1020 鈫?n58[7]
+  [DFF] g1021 鈫?n58[8]
+  [DFF] g1022 鈫?n58[9]
+  [DFF] g1023 鈫?n58[10]
+  [DFF] g1024 鈫?n58[11]
+  [DFF] g1025 鈫?n58[12]
+  [DFF] g1026 鈫?n50[0]
+  [DFF] g1027 鈫?n50[0]
+  [DFF] g1028 鈫?n50[1]
+  [DFF] g1029 鈫?n50[1]
+  [DFF] g1030 鈫?n50[2]
+  [DFF] g1031 鈫?n50[2]
+  [DFF] g1032 鈫?n50[3]
+  [DFF] g1033 鈫?n50[3]
+  [DFF] g1034 鈫?n50[4]
+  [DFF] g1035 鈫?n50[5]
+  [DFF] g1036 鈫?n50[6]
+  [DFF] g1037 鈫?n50[7]
+  [DFF] g1038 鈫?n50[8]
+  [DFF] g1039 鈫?n50[9]
+  [DFF] g1040 鈫?n50[10]
+  [DFF] g1041 鈫?n50[11]
+  [DFF] g1042 鈫?n50[12]
+  [DFF] g1043 鈫?n50[13]
+  [DFF] g1044 鈫?n50[14]
+  [DFF] g1045 鈫?n50[15]
+  [DFF] g1046 鈫?n51[0]
+  [DFF] g1047 鈫?n51[0]
+  [DFF] g1048 鈫?n51[1]
+  [DFF] g1049 鈫?n51[1]
+  [DFF] g1050 鈫?n51[2]
+  [DFF] g1051 鈫?n51[2]
+  [DFF] g1052 鈫?n51[3]
+  [DFF] g1053 鈫?n51[3]
+  [DFF] g1054 鈫?n51[4]
+  [DFF] g1055 鈫?n51[5]
+  [DFF] g1056 鈫?n51[6]
+  [DFF] g1057 鈫?n51[7]
+  [DFF] g1058 鈫?n51[8]
+  [DFF] g1059 鈫?n51[9]
+  [DFF] g1060 鈫?n51[10]
+  [DFF] g1061 鈫?n51[11]
+  [DFF] g1062 鈫?n51[12]
+  [DFF] g1063 鈫?n51[13]
+  [DFF] g1064 鈫?n51[14]
+  [DFF] g1065 鈫?n51[15]
+  [DFF] g1066 鈫?n52[0]
+  [DFF] g1067 鈫?n52[0]
+  [DFF] g1068 鈫?n52[1]
+  [DFF] g1069 鈫?n52[1]
+  [DFF] g1070 鈫?n52[2]
+  [DFF] g1071 鈫?n52[2]
+  [DFF] g1072 鈫?n52[3]
+  [DFF] g1073 鈫?n52[3]
+  [DFF] g1074 鈫?n52[4]
+  [DFF] g1075 鈫?n52[5]
+  [DFF] g1076 鈫?n52[6]
+  [DFF] g1077 鈫?n52[7]
+  [DFF] g1078 鈫?n52[8]
+  [DFF] g1079 鈫?n52[9]
+  [DFF] g1080 鈫?n52[10]
+  [DFF] g1081 鈫?n52[11]
+  [DFF] g1082 鈫?n52[12]
+  [DFF] g1083 鈫?n52[13]
+  [DFF] g1084 鈫?n52[14]
+  [DFF] g1085 鈫?n52[15]
+  [DFF] g1086 鈫?n49[0]
+  [DFF] g1087 鈫?n49[0]
+  [DFF] g1088 鈫?n49[1]
+  [DFF] g1089 鈫?n49[1]
+  [DFF] g1090 鈫?n49[2]
+  [DFF] g1091 鈫?n49[2]
+  [DFF] g1092 鈫?n49[3]
+  [DFF] g1093 鈫?n49[3]
+  [DFF] g1094 鈫?n49[4]
+  [DFF] g1095 鈫?n49[5]
+  [DFF] g1096 鈫?n49[6]
+  [DFF] g1097 鈫?n49[7]
+  [DFF] g1098 鈫?n49[8]
+  [DFF] g1099 鈫?n49[9]
+  [DFF] g1100 鈫?n49[10]
+  [DFF] g1101 鈫?n49[11]
+  [DFF] g1102 鈫?n49[12]
+  [DFF] g1103 鈫?n49[13]
+  [DFF] g1104 鈫?n49[14]
+  [DFF] g1105 鈫?n49[15]
+  [DFF] g1106 鈫?n125
+  [DFF] g1107 鈫?n126
+  [DFF] g1108 鈫?n127
+  [DFF] g1109 鈫?n128
+  [DFF] g1110 鈫?n129
+  [DFF] g1111 鈫?n130
+  [DFF] g1112 鈫?n37[0]
+  [DFF] g1113 鈫?n37[1]
+  [DFF] g1114 鈫?n37[2]
+  [DFF] g1115 鈫?n37[3]
+  [DFF] g1116 鈫?n43[0]
+  [DFF] g1117 鈫?n43[1]
+  [DFF] g1118 鈫?n43[2]
+  [DFF] g1119 鈫?n33[0]
+Result capped at 120 of 844 load(s).
+#END 7
+#RESPONSE 8
+OK: Boolean expression for 'n16': n16
+#END 8
+#RESPONSE 9
+OK: Shared fanin gates between 'n16' and 'n17': 0
+#END 9
+#RESPONSE 10
+OK: Boolean expression for 'n16': n16
+#END 10
+#RESPONSE 11
+OK: 'g0' directly drives 1 gate(s).
+  [OR] $or$testcase/test31/test31.v:1442$1453 鈫?$or$testcase/test31/test31.v:1442$1453_Y
+#END 11
+#RESPONSE 12
+OK: Renamed wire 'n1289' to 'renamed_sig'.
+#END 12
+#RESPONSE 13
+OK: 'renamed_sig' directly drives 46 gate(s).
+  [AND] $and$testcase/test31/test31.v:4546$5689 鈫?$and$testcase/test31/test31.v:4546$5689_Y
+  [AND] $and$testcase/test31/test31.v:4552$5701 鈫?$and$testcase/test31/test31.v:4552$5701_Y
+  [AND] $and$testcase/test31/test31.v:4553$5703 鈫?$and$testcase/test31/test31.v:4553$5703_Y
+  [AND] $and$testcase/test31/test31.v:4555$5707 鈫?$and$testcase/test31/test31.v:4555$5707_Y
+  [AND] $and$testcase/test31/test31.v:4556$5709 鈫?$and$testcase/test31/test31.v:4556$5709_Y
+  [AND] $and$testcase/test31/test31.v:4557$5711 鈫?$and$testcase/test31/test31.v:4557$5711_Y
+  [AND] $and$testcase/test31/test31.v:4559$5715 鈫?$and$testcase/test31/test31.v:4559$5715_Y
+  [AND] $and$testcase/test31/test31.v:4562$5721 鈫?$and$testcase/test31/test31.v:4562$5721_Y
+  [AND] $and$testcase/test31/test31.v:4563$5723 鈫?$and$testcase/test31/test31.v:4563$5723_Y
+  [AND] $and$testcase/test31/test31.v:4564$5725 鈫?$and$testcase/test31/test31.v:4564$5725_Y
+  [AND] $and$testcase/test31/test31.v:4565$5727 鈫?$and$testcase/test31/test31.v:4565$5727_Y
+  [AND] $and$testcase/test31/test31.v:4566$5729 鈫?$and$testcase/test31/test31.v:4566$5729_Y
+  [AND] $and$testcase/test31/test31.v:4568$5733 鈫?$and$testcase/test31/test31.v:4568$5733_Y
+  [AND] $and$testcase/test31/test31.v:4570$5737 鈫?$and$testcase/test31/test31.v:4570$5737_Y
+  [AND] $and$testcase/test31/test31.v:4572$5741 鈫?$and$testcase/test31/test31.v:4572$5741_Y
+  [AND] $and$testcase/test31/test31.v:4573$5743 鈫?$and$testcase/test31/test31.v:4573$5743_Y
+  [AND] $and$testcase/test31/test31.v:4575$5747 鈫?$and$testcase/test31/test31.v:4575$5747_Y
+  [AND] $and$testcase/test31/test31.v:4576$5749 鈫?$and$testcase/test31/test31.v:4576$5749_Y
+  [AND] $and$testcase/test31/test31.v:4578$5753 鈫?$and$testcase/test31/test31.v:4578$5753_Y
+  [AND] $and$testcase/test31/test31.v:4579$5755 鈫?$and$testcase/test31/test31.v:4579$5755_Y
+  [AND] $and$testcase/test31/test31.v:4580$5757 鈫?$and$testcase/test31/test31.v:4580$5757_Y
+  [AND] $and$testcase/test31/test31.v:4582$5761 鈫?$and$testcase/test31/test31.v:4582$5761_Y
+  [AND] $and$testcase/test31/test31.v:4583$5763 鈫?$and$testcase/test31/test31.v:4583$5763_Y
+  [AND] $and$testcase/test31/test31.v:4584$5765 鈫?$and$testcase/test31/test31.v:4584$5765_Y
+  [AND] $and$testcase/test31/test31.v:4585$5767 鈫?$and$testcase/test31/test31.v:4585$5767_Y
+  [AND] $and$testcase/test31/test31.v:4586$5769 鈫?$and$testcase/test31/test31.v:4586$5769_Y
+  [AND] $and$testcase/test31/test31.v:4587$5771 鈫?$and$testcase/test31/test31.v:4587$5771_Y
+  [AND] $and$testcase/test31/test31.v:4588$5773 鈫?$and$testcase/test31/test31.v:4588$5773_Y
+  [AND] $and$testcase/test31/test31.v:4589$5775 鈫?$and$testcase/test31/test31.v:4589$5775_Y
+  [AND] $and$testcase/test31/test31.v:4590$5777 鈫?$and$testcase/test31/test31.v:4590$5777_Y
+  [AND] $and$testcase/test31/test31.v:4592$5781 鈫?$and$testcase/test31/test31.v:4592$5781_Y
+  [AND] $and$testcase/test31/test31.v:4842$6252 鈫?$and$testcase/test31/test31.v:4842$6252_Y
+  [AND] $and$testcase/test31/test31.v:4843$6254 鈫?$and$testcase/test31/test31.v:4843$6254_Y
+  [AND] $and$testcase/test31/test31.v:4844$6256 鈫?$and$testcase/test31/test31.v:4844$6256_Y
+  [AND] $and$testcase/test31/test31.v:4845$6258 鈫?$and$testcase/test31/test31.v:4845$6258_Y
+  [AND] $and$testcase/test31/test31.v:4846$6260 鈫?$and$testcase/test31/test31.v:4846$6260_Y
+  [AND] $and$testcase/test31/test31.v:4847$6262 鈫?$and$testcase/test31/test31.v:4847$6262_Y
+  [AND] $and$testcase/test31/test31.v:4848$6264 鈫?$and$testcase/test31/test31.v:4848$6264_Y
+  [AND] $and$testcase/test31/test31.v:4849$6266 鈫?$and$testcase/test31/test31.v:4849$6266_Y
+  [AND] $and$testcase/test31/test31.v:4850$6268 鈫?$and$testcase/test31/test31.v:4850$6268_Y
+  [AND] $and$testcase/test31/test31.v:4853$6274 鈫?$and$testcase/test31/test31.v:4853$6274_Y
+  [AND] $and$testcase/test31/test31.v:4854$6276 鈫?$and$testcase/test31/test31.v:4854$6276_Y
+  [NOT] $not$testcase/test31/test31.v:5050$6634 鈫?n1290
+  [OR] $or$testcase/test31/test31.v:4445$5489 鈫?n2413
+  [OR] $or$testcase/test31/test31.v:4672$5915 鈫?n1897
+  [OR] $or$testcase/test31/test31.v:4834$6238 鈫?$or$testcase/test31/test31.v:4834$6238_Y
+#END 13
+#RESPONSE 14
+OK: Inserted 2 dedicated buffer(s) on 'n2'. The original fanout was 2; each original load is now driven through its own buffer.
+#END 14
+#RESPONSE 15
+OK: buf_added: 2
+#END 15
+#RESPONSE 16
+OK: Maximum PI-to-DFF-D depth: 22 gate level(s).
+Source: n2
+DFF: g1202
+Example path:
+  n2
+  -> [BUF] ded_buf_1 鈫?__ded_n2_1__
+  -> [OR] $or$testcase/test31/test31.v:5268$7047 鈫?n1329
+  -> [AND] $and$testcase/test31/test31.v:5031$6596 鈫?$and$testcase/test31/test31.v:5031$6596_Y
+  -> [NOT] $not$testcase/test31/test31.v:5031$6597 鈫?n1558
+  -> [OR] $or$testcase/test31/test31.v:4858$6281 鈫?n1711
+  -> [AND] $and$testcase/test31/test31.v:3931$4516 鈫?$and$testcase/test31/test31.v:3931$4516_Y
+  -> [NOT] $not$testcase/test31/test31.v:3931$4517 鈫?n2673
+  -> [OR] $or$testcase/test31/test31.v:3412$3494 鈫?$or$testcase/test31/test31.v:3412$3494_Y
+  -> [NOT] $not$testcase/test31/test31.v:3412$3495 鈫?n3190
+  -> [AND] $and$testcase/test31/test31.v:3088$2849 鈫?$and$testcase/test31/test31.v:3088$2849_Y
+  -> [NOT] $not$testcase/test31/test31.v:3088$2850 鈫?n3514
+  -> [OR] $or$testcase/test31/test31.v:2965$2681 鈫?n3666
+  -> [AND] $and$testcase/test31/test31.v:2881$2555 鈫?$and$testcase/test31/test31.v:2881$2555_Y
+  -> [NOT] $not$testcase/test31/test31.v:2881$2556 鈫?n3723
+  -> [OR] $or$testcase/test31/test31.v:2874$2542 鈫?$or$testcase/test31/test31.v:2874$2542_Y
+  -> [NOT] $not$testcase/test31/test31.v:2874$2543 鈫?n3741
+  -> [AND] $and$testcase/test31/test31.v:2858$2513 鈫?$and$testcase/test31/test31.v:2858$2513_Y
+  -> [NOT] $not$testcase/test31/test31.v:2858$2514 鈫?n3745
+  -> [OR] $or$testcase/test31/test31.v:2853$2506 鈫?$or$testcase/test31/test31.v:2853$2506_Y
+  -> [NOT] $not$testcase/test31/test31.v:2853$2507 鈫?n3750
+  -> [OR] $or$testcase/test31/test31.v:2767$2346 鈫?n3829
+  -> [OR] $or$testcase/test31/test31.v:2542$1906 鈫?n4054
+  -> [DFF] g1698 鈫?n5189
+#END 16
+#RESPONSE 17
+OK: Outputs with logic depth > 4: 32
+  n13[0]: 29
+  n13[3]: 26
+  n13[6]: 19
+  n13[5]: 19
+  n13[4]: 19
+  n13[7]: 19
+  n13[24]: 15
+  n13[29]: 15
+  n13[30]: 15
+  n13[20]: 15
+  n13[19]: 15
+  n13[28]: 15
+  n13[18]: 15
+  n13[25]: 15
+  n13[17]: 15
+  n13[26]: 15
+  n13[16]: 15
+  n13[31]: 15
+  n13[23]: 15
+  n13[27]: 15
+  n13[22]: 15
+  n13[21]: 15
+  n13[1]: 27
+  n13[2]: 26
+  n13[10]: 17
+  n13[8]: 17
+  n13[11]: 17
+  n13[12]: 17
+  n13[9]: 17
+  n13[15]: 16
+  n13[14]: 16
+  n13[13]: 16
+#END 17
+#RESPONSE 18
+OK: Gate: g0
+Resolved cell: $and$testcase/test31/test31.v:5641$7603
+Type: AND
+Output: n5015
+Inputs:
+  A: n343
+  B: n344
+#END 18
+#RESPONSE 19
+OK: No. 'n1287' and 'n2404' do not match structurally, and the combined support is too large for exhaustive local simulation.
+#END 19
+#RESPONSE 20
+OK: Design written to 'testcase/test31/test31_out.v' successfully.
+#END 20

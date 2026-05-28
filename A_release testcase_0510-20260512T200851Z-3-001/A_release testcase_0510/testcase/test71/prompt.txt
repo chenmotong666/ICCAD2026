@@ -1,0 +1,6 @@
+This is the beginning of a new testcase. The case name is test71.
+Please load the design from the file test71.v located in the directory testcase/test71/.
+Please count all the gates in this design and report the total count broken down by gate type (AND, OR, NOT, NAND, NOR, XOR, XNOR, BUF, DFF).
+What is the maximum logic depth from input n2[0] to output n6?
+Does a combinational path exist from primary input n2[1] to primary output n7?
+Please write the current design to the output file test71_out.v.

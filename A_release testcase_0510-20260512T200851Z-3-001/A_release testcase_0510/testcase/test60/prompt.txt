@@ -1,0 +1,7 @@
+This is the beginning of testcase test60. Please output a copy of the log into test60.log.
+Please load the design from the file test60.v located in the directory testcase/test60/.
+Please count all the gates in this design and report the total count broken down by gate type (AND, OR, NOT, NAND, NOR, XOR, XNOR, BUF, DFF).
+Report any XOR gates with constant inputs in this design.
+Simplify the reported XOR gates by propagating their constant inputs. Ensure the design functionality does not change.
+List all XOR gates in this design.
+Please write the current design to the output file test60_out.v.

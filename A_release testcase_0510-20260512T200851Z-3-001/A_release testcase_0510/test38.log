@@ -1,0 +1,121 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test38'. All responses will be logged to 'test38.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test38/test38.v' successfully.
+  Cells: 7056
+  Primary inputs:  n0, n1, n10, n10[1], n10[2], n10[3], n11, n11[1], n11[2], n11[3], n12, n12[1], n12[2], n12[3], n12[4], n12[5], n12[6], n13, n13[1], n13[2], n13[3], n13[4], n2, n3, n4, n5, n6, n7, n8, n8[1], n8[2], n8[3], ... (12 more)
+  Primary outputs: n27, n25, n28, n26, n30[7], n30[2], n30[4], n30[0], n17, n30[3], n30[1], n30[5], n30[6], n15, n14, n22, n16, n35[0], n35[1], n35[2], n35[3], n29[0], n29[1], n29[2], n29[3], n29[4], n29[5], n29[6], n29[7], n20, n21, n34[0], ... (74 more)
+  Gate breakdown:  {'and': 2416, 'dff': 571, 'not': 3202, 'or': 735, 'xor': 132}
+#END 2
+#RESPONSE 3
+OK: Total gates: 7056
+Gate breakdown:
+  AND  : 2416
+  OR   : 735
+  NOT  : 3202
+  NAND : 0
+  NOR  : 0
+  XOR  : 132
+  XNOR : 0
+  BUF  : 0
+  DFF  : 571
+#END 3
+#RESPONSE 4
+OK: Inserted 336 buffer(s) on 'n1' to limit fanout to ≤ 4.
+#END 4
+#RESPONSE 5
+OK: Maximum fanout: 28 at [NOT] $not$testcase/test38/test38.v:3609$4689 鈫?n1172.
+#END 5
+#RESPONSE 6
+OK: Highest-fanout primary input: n0 with fanout 571.
+#END 6
+#RESPONSE 7
+OK: No inverter pair collapse was applicable; removed 25 dangling gate(s) during the cleanup pass.
+#END 7
+#RESPONSE 8
+OK: Maximum combinational depth: 24 gate level(s).
+Source: n13[3]
+Output: n30[7]
+Example path:
+  n13[3]
+  -> [NOT] $not$testcase/test38/test38.v:976$6393 鈫?n3153
+  -> [OR] $or$testcase/test38/test38.v:961$842 鈫?$or$testcase/test38/test38.v:961$842_Y
+  -> [NOT] $not$testcase/test38/test38.v:961$843 鈫?n3169
+  -> [AND] $and$testcase/test38/test38.v:943$818 鈫?$and$testcase/test38/test38.v:943$818_Y
+  -> [NOT] $not$testcase/test38/test38.v:943$819 鈫?n3187
+  -> [OR] $or$testcase/test38/test38.v:932$801 鈫?$or$testcase/test38/test38.v:932$801_Y
+  -> [NOT] $not$testcase/test38/test38.v:932$802 鈫?n3196
+  -> [AND] $and$testcase/test38/test38.v:720$396 鈫?$and$testcase/test38/test38.v:720$396_Y
+  -> [NOT] $not$testcase/test38/test38.v:720$397 鈫?n3395
+  -> [AND] $and$testcase/test38/test38.v:631$218 鈫?$and$testcase/test38/test38.v:631$218_Y
+  -> [NOT] $not$testcase/test38/test38.v:631$219 鈫?n3484
+  -> [OR] $or$testcase/test38/test38.v:573$109 鈫?n3542
+  -> [OR] $or$testcase/test38/test38.v:551$67 鈫?$or$testcase/test38/test38.v:551$67_Y
+  -> [NOT] $not$testcase/test38/test38.v:551$68 鈫?n3564
+  -> [AND] $and$testcase/test38/test38.v:536$42 鈫?$and$testcase/test38/test38.v:536$42_Y
+  -> [NOT] $not$testcase/test38/test38.v:536$43 鈫?n3579
+  -> [OR] $or$testcase/test38/test38.v:532$34 鈫?$or$testcase/test38/test38.v:532$34_Y
+  -> [NOT] $not$testcase/test38/test38.v:532$35 鈫?n3583
+  -> [AND] $and$testcase/test38/test38.v:519$12 鈫?$and$testcase/test38/test38.v:519$12_Y
+  -> [NOT] $not$testcase/test38/test38.v:519$13 鈫?n3592
+  -> [OR] $or$testcase/test38/test38.v:515$6 鈫?$or$testcase/test38/test38.v:515$6_Y
+  -> [NOT] $not$testcase/test38/test38.v:515$7 鈫?n3594
+  -> [AND] $and$testcase/test38/test38.v:512$1 鈫?$and$testcase/test38/test38.v:512$1_Y
+  -> [NOT] $not$testcase/test38/test38.v:512$2 鈫?n30[7]
+#END 8
+#RESPONSE 9
+OK: Dangling cleanup already completed; previous pass removed 25 dangling gate(s).
+#END 9
+#RESPONSE 10
+OK: dangling_removed: 25
+#END 10
+#RESPONSE 11
+OK: Direct PI-to-PO wire connections: 0
+#END 11
+#RESPONSE 12
+OK: Articulation points between 'n2' and 'n14': 5
+  [NOT] $not$testcase/test38/test38.v:2686$2992 鈫?n1999
+  [OR] $or$testcase/test38/test38.v:2686$2991 鈫?$or$testcase/test38/test38.v:2686$2991_Y
+  [DFF] g571 鈫?n151
+  [DFF] g573 鈫?n53[1]
+  [DFF] g572 鈫?n53[0]
+#END 12
+#RESPONSE 13
+OK: Renamed wire 'n440' to 'renamed_wire'.
+#END 13
+#RESPONSE 14
+OK: Not found: "Cannot resolve 'n440': not a node, wire, or port name."
+#END 14
+#RESPONSE 15
+OK: No NAND gates with constant 0 input found.
+
+No NAND gates with constant 1 input found.
+#END 15
+#RESPONSE 16
+OK: Eliminated 336 gate(s) by local constant propagation (constant rewrites=336, dangling cleanup=0).
+#END 16
+#RESPONSE 17
+OK: constant_gates_eliminated: 336
+#END 17
+#RESPONSE 18
+OK: Gate breakdown in cone of 'n14':
+  TOTAL: 1
+  AND  : 0
+  OR   : 0
+  NOT  : 0
+  NAND : 0
+  NOR  : 0
+  XOR  : 0
+  XNOR : 0
+  BUF  : 0
+  DFF  : 1
+#END 18
+#RESPONSE 19
+OK: Transitive fanin cone of 'n14' contains 1 gate(s).
+Gate breakdown: {'dff': 1}
+  [DFF] g1040 鈫?n14
+#END 19
+#RESPONSE 20
+OK: Design written to 'test38_out.v' successfully.
+#END 20

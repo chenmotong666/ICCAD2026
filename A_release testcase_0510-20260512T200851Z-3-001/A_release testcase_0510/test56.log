@@ -1,0 +1,32 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test56'. All responses will be logged to 'test56.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test56/test56.v' successfully.
+  Cells: 37
+  Primary inputs:  n0, n1, n2, n3, n4, n5, n6, n7, n8
+  Primary outputs: n22, n20, n21, n31, n32, n23
+  Gate breakdown:  {'and': 16, 'dff': 2, 'not': 10, 'or': 5, 'xor': 4}
+#END 2
+#RESPONSE 3
+OK: Total gates: 37
+Gate breakdown:
+  AND  : 16
+  OR   : 5
+  NOT  : 10
+  NAND : 0
+  NOR  : 0
+  XOR  : 4
+  XNOR : 0
+  BUF  : 0
+  DFF  : 2
+#END 3
+#RESPONSE 4
+OK: No remaining 2-input OR gates were found in cone of 'n22'; converted 5 OR gate(s) elsewhere to NAND/NOT form. The design now contains 5 NAND gate(s).
+#END 4
+#RESPONSE 5
+OK: OR gates: 0
+#END 5
+#RESPONSE 6
+OK: Design written to 'test56_out.v' successfully.
+#END 6

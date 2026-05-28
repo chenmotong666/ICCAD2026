@@ -1,0 +1,50 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test70'. All responses will be logged to 'test70.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test70/test70.v' successfully.
+  Cells: 37
+  Primary inputs:  n0, n1, n12, n12[1], n12[2], n12[3], n2, n3, n4, n5, n6, n7, n8
+  Primary outputs: n30[0], n20, n22, n30[1], n21, n31, n32, n23
+  Gate breakdown:  {'and': 16, 'dff': 2, 'not': 7, 'or': 7, 'xor': 5}
+#END 2
+#RESPONSE 3
+OK: Removed 10 dangling gate(s).
+
+Inverter cleanup pass completed; no back-to-back NOT pairs remain.
+#END 3
+#RESPONSE 4
+OK: Maximum combinational depth: 10 gate level(s).
+Source: n2
+Output: n20
+Example path:
+  n2
+  -> [AND] $and$testcase/test70/test70.v:8$1 鈫?n100
+  -> [OR] $or$testcase/test70/test70.v:9$2 鈫?n101
+  -> [NOT] $not$testcase/test70/test70.v:10$34 鈫?n102
+  -> [XOR] $xor$testcase/test70/test70.v:11$3 鈫?n103
+  -> [AND] $and$testcase/test70/test70.v:12$4 鈫?$and$testcase/test70/test70.v:12$4_Y
+  -> [NOT] $not$testcase/test70/test70.v:12$5 鈫?n104
+  -> [OR] $or$testcase/test70/test70.v:13$6 鈫?$or$testcase/test70/test70.v:13$6_Y
+  -> [NOT] $not$testcase/test70/test70.v:13$7 鈫?n105
+  -> [XOR] $xor$testcase/test70/test70.v:14$8 鈫?$xor$testcase/test70/test70.v:14$8_Y
+  -> [NOT] $not$testcase/test70/test70.v:14$9 鈫?n20
+
+Total gates: 27
+Gate breakdown:
+  AND  : 9
+  OR   : 6
+  NOT  : 5
+  NAND : 0
+  NOR  : 0
+  XOR  : 5
+  XNOR : 0
+  BUF  : 0
+  DFF  : 2
+#END 4
+#RESPONSE 5
+OK: Not found: "Cannot resolve 'top': not a node, wire, or port name."
+#END 5
+#RESPONSE 6
+OK: Design written to 'test70_out.v' successfully.
+#END 6

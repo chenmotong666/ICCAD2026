@@ -1,0 +1,49 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test89'. All responses will be logged to 'test89.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test89/test89.v' successfully.
+  Cells: 34
+  Primary inputs:  n0, n1, n2, n2[1], n2[2], n2[3], n3, n3[1], n3[2], n3[3], n4, n5
+  Primary outputs: n6, n7, n8, n12, n11, n9, n10
+  Gate breakdown:  {'and': 11, 'dff': 1, 'not': 6, 'or': 10, 'xor': 6}
+#END 2
+#RESPONSE 3
+OK: Total gates: 34
+Gate breakdown:
+  AND  : 11
+  OR   : 10
+  NOT  : 6
+  NAND : 0
+  NOR  : 0
+  XOR  : 6
+  XNOR : 0
+  BUF  : 0
+  DFF  : 1
+#END 3
+#RESPONSE 4
+OK: Primary inputs: 14
+Primary outputs: 7
+#END 4
+#RESPONSE 5
+OK: Primary input bit widths:
+  n0: 1
+  n1: 1
+  n2: 4
+  n3: 4
+  n4: 1
+  n5: 1
+#END 5
+#RESPONSE 6
+OK: Primary output bit widths:
+  n10: 1
+  n11: 1
+  n12: 1
+  n6: 1
+  n7: 1
+  n8: 1
+  n9: 1
+#END 6
+#RESPONSE 7
+OK: Design written to 'testcase/test89/test89_out.v' successfully.
+#END 7

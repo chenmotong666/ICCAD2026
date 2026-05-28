@@ -1,0 +1,44 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test71'. All responses will be logged to 'test71.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test71/test71.v' successfully.
+  Cells: 25
+  Primary inputs:  n0, n1, n2, n2[1], n2[2], n2[3], n3, n3[1], n3[2], n3[3], n4, n5
+  Primary outputs: n12[0], n12[1], n12[2], n11, n6, n7, n8, n9, n10, n12[3]
+  Gate breakdown:  {'and': 8, 'dff': 1, 'not': 4, 'or': 9, 'xor': 3}
+#END 2
+#RESPONSE 3
+OK: Total gates: 25
+Gate breakdown:
+  AND  : 8
+  OR   : 9
+  NOT  : 4
+  NAND : 0
+  NOR  : 0
+  XOR  : 3
+  XNOR : 0
+  BUF  : 0
+  DFF  : 1
+#END 3
+#RESPONSE 4
+OK: Maximum logic depth from 'n2[0]' to 'n6': 6 gate level(s).
+Example longest path:
+    n2[0]
+    └─ [AND] $and$testcase/test71/test71.v:16$1 鈫?n13
+    └─ [OR] $or$testcase/test71/test71.v:17$2 鈫?n14
+    └─ [NOT] $not$testcase/test71/test71.v:18$25 鈫?n15
+    └─ [XOR] $xor$testcase/test71/test71.v:19$3 鈫?n16
+    └─ [AND] $and$testcase/test71/test71.v:20$4 鈫?n17
+    └─ [OR] $or$testcase/test71/test71.v:21$5 鈫?n6
+#END 4
+#RESPONSE 5
+OK: Path found:
+  n2[1]
+  → [AND] $and$testcase/test71/test71.v:23$6 鈫?n30
+  → [XOR] $xor$testcase/test71/test71.v:24$7 鈫?n31
+  → [OR] $or$testcase/test71/test71.v:25$8 鈫?n7
+#END 5
+#RESPONSE 6
+OK: Design written to 'test71_out.v' successfully.
+#END 6

@@ -1,0 +1,8 @@
+This is the beginning of a new testcase. The case name is test98.
+Please load the design from the file test98.v located in the directory testcase/test98/.
+Please count all the gates in this design and report the total count broken down by gate type (AND, OR, NOT, NAND, NOR, XOR, XNOR, BUF, DFF).
+Rename gate g0 to renamed_gate. Ensure functional equivalence is preserved.
+What type of gate is renamed_gate?
+Rename wire n14 to renamed_signal. Ensure functional equivalence is preserved.
+List all gates that now connect to the renamed signal renamed_signal.
+Please write the current design to the output file test98_out.v.

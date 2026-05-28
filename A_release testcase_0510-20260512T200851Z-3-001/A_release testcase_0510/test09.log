@@ -1,0 +1,45 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test09'. All responses will be logged to 'test09.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test09/test09.v' successfully.
+  Cells: 2032
+  Primary inputs:  n0, n1, n10, n11, n12, n13, n14, n15, n16, n17, n18, n19, n2, n20, n21, n22, n23, n24, n25, n26, n27, n28, n29, n3, n30, n31, n32, n33, n34, n35, n36, n37, ... (64 more)
+  Primary outputs: n90[3], n91[3], n92[3], n93[3], n94[3], n95[3], n96[3], n97[3], n98[3], n99[3], n100[3], n101[3], n102[3], n103[3], n104[3], n105[3], n106[3], n107[3], n108[3], n109[3], n110[3], n111[3], n112[3], n113[3], n114[3], n115[3], n116[3], n117[2], n118[2], n119[2], n120[2], n121[2], ... (253 more)
+  Gate breakdown:  {'and': 439, 'not': 778, 'or': 576, 'xor': 239}
+#END 2
+#RESPONSE 3
+OK: Total gates: 2032
+Gate breakdown:
+  AND  : 439
+  OR   : 576
+  NOT  : 778
+  NAND : 0
+  NOR  : 0
+  XOR  : 239
+  XNOR : 0
+  BUF  : 0
+  DFF  : 0
+#END 3
+#RESPONSE 4
+OK: Path found:
+  n0
+  → [OR] $or$testcase/test09/test09.v:2213$1696 鈫?n880
+  → [AND] $and$testcase/test09/test09.v:2212$1695 鈫?n1104
+  → [OR] $or$testcase/test09/test09.v:1304$672 鈫?n143
+  → [AND] $and$testcase/test09/test09.v:1297$662 鈫?n1003
+  → [AND] $and$testcase/test09/test09.v:553$418 鈫?n1487
+  → [OR] $or$testcase/test09/test09.v:282$18 鈫?n117[0]
+#END 4
+#RESPONSE 5
+OK: No path found from 'n1' to 'n117[1]' (avoiding 'n1646').
+#END 5
+#RESPONSE 6
+OK: No paths found from 'n1' to 'n117[1]'.
+#END 6
+#RESPONSE 7
+OK: No paths found from 'n2' to 'n117[0]'.
+#END 7
+#RESPONSE 8
+OK: Design written to 'test09_out.v' successfully.
+#END 8

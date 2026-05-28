@@ -1,0 +1,126 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test34'. All responses will be logged to 'test34.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test34/test34.v' successfully.
+  Cells: 43180
+  Primary inputs:  n0, n1, n10, n11, n12, n12[10], n12[11], n12[12], n12[13], n12[14], n12[15], n12[16], n12[17], n12[18], n12[19], n12[1], n12[20], n12[21], n12[22], n12[23], n12[24], n12[25], n12[26], n12[27], n12[28], n12[29], n12[2], n12[30], n12[31], n12[3], n12[4], n12[5], ... (252 more)
+  Primary outputs: n45[10], n45[11], n45[12], n45[13], n45[14], n45[15], n45[16], n45[17], n45[18], n45[19], n45[20], n45[21], n45[22], n45[23], n45[24], n41, n45[25], n45[26], n45[27], n45[28], n55[0], n55[1], n55[2], n55[3], n55[4], n55[5], n55[6], n55[7], n55[8], n45[29], n55[9], n55[10], ... (241 more)
+  Gate breakdown:  {'and': 16979, 'dff': 3802, 'not': 19658, 'or': 1924, 'xor': 817}
+#END 2
+#RESPONSE 3
+OK: Total gates: 43180
+Gate breakdown:
+  AND  : 16979
+  OR   : 1924
+  NOT  : 19658
+  NAND : 0
+  NOR  : 0
+  XOR  : 817
+  XNOR : 0
+  BUF  : 0
+  DFF  : 3802
+#END 3
+#RESPONSE 4
+OK: Inserted 1364 buffer(s) on 'n0' to limit fanout to ≤ 4.
+#END 4
+#RESPONSE 5
+OK: Maximum fanout: 116 at [OR] $or$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:37197$63371 鈫?\$not$testcase/test34/test34.v:19769$39632_Y.
+#END 5
+#RESPONSE 6
+OK: Current design is equivalent to the original by the recorded equivalence-preserving transformation rules applied in this session (44544 cell(s)).
+#END 6
+#RESPONSE 7
+OK: Boolean expression for 'n30': n30
+#END 7
+#RESPONSE 8
+OK: Path found:
+  n2
+  → [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8756$54598 鈫?\$and$testcase/test34/test34.v:19486$25462_Y
+  → [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26275$74861 鈫?\$not$testcase/test34/test34.v:19486$25463_Y
+  → [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8176$54018 鈫?\$and$testcase/test34/test34.v:18581$23793_Y
+  → [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:25457$74043 鈫?\$not$testcase/test34/test34.v:18581$23794_Y
+  → [OR] $or$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:36945$63119 鈫?\$or$testcase/test34/test34.v:17445$21526_Y
+  → [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:5676$51518 鈫?\$and$testcase/test34/test34.v:15942$18539_Y
+  → [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:22838$71424 鈫?\$not$testcase/test34/test34.v:15942$18540_Y
+  → [DFF] g3869 鈫?n30
+#END 8
+#RESPONSE 9
+OK: Not found: Gate 'xnor' was not found.
+#END 9
+#RESPONSE 10
+OK: NOR gates: 0
+#END 10
+#RESPONSE 11
+OK: Inserted 1 dedicated buffer(s) on 'n2'. The original fanout was 1; each original load is now driven through its own buffer.
+#END 11
+#RESPONSE 12
+OK: buf_added: 1
+#END 12
+#RESPONSE 13
+OK: Inserted 10106 buffer(s) across the design to limit PI/cell fanout to <= 4. Maximum observed fanout is now 4.
+#END 13
+#RESPONSE 14
+OK: Current design is equivalent to the original by the recorded equivalence-preserving transformation rules applied in this session (54651 cell(s)).
+#END 14
+#RESPONSE 15
+OK: Maximum combinational depth: 32 gate level(s).
+Source: n20[5]
+Output: n30
+Example path:
+  n20[5]
+  -> [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8928$54770 鈫?\$and$testcase/test34/test34.v:19911$25997_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26590$75176 鈫?\$not$testcase/test34/test34.v:19911$25998_Y
+  -> [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8927$54769 鈫?\$and$testcase/test34/test34.v:19910$25995_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26589$75175 鈫?\$not$testcase/test34/test34.v:19910$25996_Y
+  -> [OR] $or$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:37238$63412 鈫?\$or$testcase/test34/test34.v:19909$25993_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26588$75174 鈫?\$not$testcase/test34/test34.v:19909$25994_Y
+  -> [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8926$54768 鈫?\$and$testcase/test34/test34.v:19908$25991_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26587$75173 鈫?\$not$testcase/test34/test34.v:19908$25992_Y
+  -> [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8925$54767 鈫?\$and$testcase/test34/test34.v:19907$25989_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26586$75172 鈫?\$not$testcase/test34/test34.v:19907$25990_Y
+  -> [OR] $or$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:37237$63411 鈫?\$or$testcase/test34/test34.v:19906$25987_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26585$75171 鈫?\$not$testcase/test34/test34.v:19906$25988_Y
+  -> [OR] $or$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:37236$63410 鈫?\$or$testcase/test34/test34.v:19905$25985_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26584$75170 鈫?\$not$testcase/test34/test34.v:19905$25986_Y
+  -> [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8924$54766 鈫?\$and$testcase/test34/test34.v:19904$25983_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26583$75169 鈫?\$not$testcase/test34/test34.v:19904$25984_Y
+  -> [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8923$54765 鈫?\$and$testcase/test34/test34.v:19903$25981_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26582$75168 鈫?\$not$testcase/test34/test34.v:19903$25982_Y
+  -> [OR] $or$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:37235$63409 鈫?\$or$testcase/test34/test34.v:19902$25979_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26581$75167 鈫?\$not$testcase/test34/test34.v:19902$25980_Y
+  -> [OR] $or$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:37234$63408 鈫?\$or$testcase/test34/test34.v:19901$25977_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26580$75166 鈫?\$not$testcase/test34/test34.v:19901$25978_Y
+  -> [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8922$54764 鈫?\$and$testcase/test34/test34.v:19900$25975_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26579$75165 鈫?\$not$testcase/test34/test34.v:19900$25976_Y
+  -> [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8921$54763 鈫?\$and$testcase/test34/test34.v:19899$25973_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26578$75164 鈫?\$not$testcase/test34/test34.v:19899$25974_Y
+  -> [OR] $or$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:37233$63407 鈫?\$not$testcase/test34/test34.v:2600$39238_Y
+  -> [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:8813$54655 鈫?\$and$testcase/test34/test34.v:19565$25587_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:26337$74923 鈫?\$not$testcase/test34/test34.v:19565$25588_Y
+  -> [OR] $or$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:36945$63119 鈫?\$or$testcase/test34/test34.v:17445$21526_Y
+  -> [AND] $and$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:5676$51518 鈫?\$and$testcase/test34/test34.v:15942$18539_Y
+  -> [NOT] $not$E:/ICCAD/A_release$20testcase_0510-20260512T200851Z-3-001/A_release$20testcase_0510/tmpi1bc3o71_preprocessed.v:22838$71424 鈫?\$not$testcase/test34/test34.v:15942$18540_Y
+  -> [DFF] g3869 鈫?n30
+#END 15
+#RESPONSE 16
+OK: Deepest output: n30 with depth 32 gate level(s).
+#END 16
+#RESPONSE 17
+OK: Net 'n0' has fanout 4.
+
+'n0' directly drives 4 gate(s).
+  [BUF] fo_buf_0 鈫?__fo_n0_0__
+  [BUF] fo_buf_341 鈫?__fo_n0_1__
+  [BUF] fo_buf_682 鈫?__fo_n0_2__
+  [BUF] fo_buf_1023 鈫?__fo_n0_3__
+#END 17
+#RESPONSE 18
+OK: Not found: Gate 'or' was not found.
+#END 18
+#RESPONSE 19
+OK: AND gates: 16979
+#END 19
+#RESPONSE 20
+OK: Design written to 'testcase/test34/test34_out.v' successfully.
+#END 20

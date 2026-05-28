@@ -1,0 +1,41 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test87'. All responses will be logged to 'test87.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test87/test87.v' successfully.
+  Cells: 35
+  Primary inputs:  n0, n1, n2, n2[1], n2[2], n2[3], n3, n3[1], n3[2], n3[3], n4, n5
+  Primary outputs: n12[0], n11, n12[1], n12[2], n6, n7, n8, n9, n10, n12[3]
+  Gate breakdown:  {'and': 8, 'not': 10, 'or': 11, 'xor': 6}
+#END 2
+#RESPONSE 3
+OK: Total gates: 35
+Gate breakdown:
+  AND  : 8
+  OR   : 11
+  NOT  : 10
+  NAND : 0
+  NOR  : 0
+  XOR  : 6
+  XNOR : 0
+  BUF  : 0
+  DFF  : 0
+#END 3
+#RESPONSE 4
+OK: Found 6 XOR gate(s):
+  [XOR] $xor$testcase/test87/test87.v:20$5 鈫?$xor$testcase/test87/test87.v:20$5_Y
+  [XOR] $xor$testcase/test87/test87.v:21$7 鈫?n18
+  [XOR] $xor$testcase/test87/test87.v:28$15 鈫?n31
+  [XOR] $xor$testcase/test87/test87.v:32$19 鈫?n42
+  [XOR] $xor$testcase/test87/test87.v:36$24 鈫?n46
+  [XOR] $xor$testcase/test87/test87.v:49$33 鈫?$xor$testcase/test87/test87.v:49$33_Y
+#END 4
+#RESPONSE 5
+OK: Converted 6 XOR gate(s) to 4-NAND implementations. The design now contains 24 NAND gate(s).
+#END 5
+#RESPONSE 6
+OK: nand_added: 18
+#END 6
+#RESPONSE 7
+OK: Design written to 'test87_out.v' successfully.
+#END 7

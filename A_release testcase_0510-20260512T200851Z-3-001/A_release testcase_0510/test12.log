@@ -1,0 +1,126 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test12'. All responses will be logged to 'test12.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test12/test12.v' successfully.
+  Cells: 106118
+  Primary inputs:  n0, n0[10], n0[11], n0[12], n0[13], n0[14], n0[15], n0[16], n0[17], n0[18], n0[19], n0[1], n0[20], n0[21], n0[22], n0[23], n0[24], n0[25], n0[26], n0[27], n0[28], n0[29], n0[2], n0[30], n0[31], n0[3], n0[4], n0[5], n0[6], n0[7], n0[8], n0[9], ... (798 more)
+  Primary outputs: n26[68], n26[39], n26[38], n26[37], n26[36], n26[35], n26[34], n26[33], n26[32], n26[31], n26[30], n26[29], n26[28], n26[27], n26[26], n26[25], n26[23], n26[22], n26[21], n26[24], n26[19], n26[20], n26[17], n26[18], n26[16], n26[15], n26[13], n26[14], n26[11], n26[12], n26[10], n26[9], ... (37 more)
+  Gate breakdown:  {'and': 18360, 'not': 34969, 'or': 32001, 'xor': 20788}
+#END 2
+#RESPONSE 3
+OK: Total gates: 106118
+Gate breakdown:
+  AND  : 18360
+  OR   : 32001
+  NOT  : 34969
+  NAND : 0
+  NOR  : 0
+  XOR  : 20788
+  XNOR : 0
+  BUF  : 0
+  DFF  : 0
+#END 3
+#RESPONSE 4
+OK: Path found:
+  n24[0]
+  → [NOT] $not$testcase/test12/test12.v:49236$101998 鈫?n49691
+  → [OR] $or$testcase/test12/test12.v:45238$41792 鈫?n53901
+  → [XOR] $xor$testcase/test12/test12.v:41837$35481 鈫?$xor$testcase/test12/test12.v:41837$35481_Y
+  → [NOT] $not$testcase/test12/test12.v:41837$35482 鈫?n56983
+  → [XOR] $xor$testcase/test12/test12.v:33620$27250 鈫?$xor$testcase/test12/test12.v:33620$27250_Y
+  → [NOT] $not$testcase/test12/test12.v:33620$27251 鈫?n66152
+  → [XOR] $xor$testcase/test12/test12.v:26883$18587 鈫?$xor$testcase/test12/test12.v:26883$18587_Y
+  → [NOT] $not$testcase/test12/test12.v:26883$18588 鈫?n72613
+  → [XOR] $xor$testcase/test12/test12.v:23999$14613 鈫?$xor$testcase/test12/test12.v:23999$14613_Y
+  → [NOT] $not$testcase/test12/test12.v:23999$14614 鈫?n74447
+  → [XOR] $xor$testcase/test12/test12.v:21913$11948 鈫?n26[0]
+#END 4
+#RESPONSE 5
+OK: Path found:
+  n24[1]
+  → [NOT] $not$testcase/test12/test12.v:45898$98951 鈫?n52933
+  → [OR] $or$testcase/test12/test12.v:43347$38359 鈫?n55876
+  → [XOR] $xor$testcase/test12/test12.v:35374$28803 鈫?$xor$testcase/test12/test12.v:35374$28803_Y
+  → [NOT] $not$testcase/test12/test12.v:35374$28804 鈫?n62009
+  → [XOR] $xor$testcase/test12/test12.v:31662$25129 鈫?$xor$testcase/test12/test12.v:31662$25129_Y
+  → [NOT] $not$testcase/test12/test12.v:31662$25130 鈫?n68112
+  → [XOR] $xor$testcase/test12/test12.v:28297$20510 鈫?$xor$testcase/test12/test12.v:28297$20510_Y
+  → [NOT] $not$testcase/test12/test12.v:28297$20511 鈫?n70588
+  → [XOR] $xor$testcase/test12/test12.v:25383$16587 鈫?$xor$testcase/test12/test12.v:25383$16587_Y
+  → [NOT] $not$testcase/test12/test12.v:25383$16588 鈫?n73366
+  → [XOR] $xor$testcase/test12/test12.v:22967$13289 鈫?n76089
+  → [OR] $or$testcase/test12/test12.v:20025$9673 鈫?n79001
+  → [AND] $and$testcase/test12/test12.v:19402$8841 鈫?n79375
+  → [XOR] $xor$testcase/test12/test12.v:18374$7473 鈫?$xor$testcase/test12/test12.v:18374$7473_Y
+  → [NOT] $not$testcase/test12/test12.v:18374$7474 鈫?n26[1]
+#END 5
+#RESPONSE 6
+OK: Found 1 path(s) from 'n24[1]' to 'n26[1]'.
+Path 1:
+  n24[1]
+  -> [NOT] $not$testcase/test12/test12.v:45898$98951 鈫?n52933
+  -> [OR] $or$testcase/test12/test12.v:43347$38359 鈫?n55876
+  -> [XOR] $xor$testcase/test12/test12.v:35374$28803 鈫?$xor$testcase/test12/test12.v:35374$28803_Y
+  -> [NOT] $not$testcase/test12/test12.v:35374$28804 鈫?n62009
+  -> [XOR] $xor$testcase/test12/test12.v:31662$25129 鈫?$xor$testcase/test12/test12.v:31662$25129_Y
+  -> [NOT] $not$testcase/test12/test12.v:31662$25130 鈫?n68112
+  -> [XOR] $xor$testcase/test12/test12.v:28297$20510 鈫?$xor$testcase/test12/test12.v:28297$20510_Y
+  -> [NOT] $not$testcase/test12/test12.v:28297$20511 鈫?n70588
+  -> [XOR] $xor$testcase/test12/test12.v:25383$16587 鈫?$xor$testcase/test12/test12.v:25383$16587_Y
+  -> [NOT] $not$testcase/test12/test12.v:25383$16588 鈫?n73366
+  -> [XOR] $xor$testcase/test12/test12.v:22967$13289 鈫?n76089
+  -> [OR] $or$testcase/test12/test12.v:20025$9673 鈫?n79001
+  -> [AND] $and$testcase/test12/test12.v:19402$8841 鈫?n79375
+  -> [XOR] $xor$testcase/test12/test12.v:18374$7473 鈫?$xor$testcase/test12/test12.v:18374$7473_Y
+  -> [NOT] $not$testcase/test12/test12.v:18374$7474 鈫?n26[1]
+Result capped at 20 path(s) with a 5 second traversal limit.
+#END 6
+#RESPONSE 7
+OK: No paths found from 'n24[2]' to 'n26[0]'.
+#END 7
+#RESPONSE 8
+OK: Maximum logic depth from 'n24[0]' to 'n26[0]': 11 gate level(s).
+Example longest path:
+    n24[0]
+    └─ [NOT] $not$testcase/test12/test12.v:49236$101998 鈫?n49691
+    └─ [OR] $or$testcase/test12/test12.v:45238$41792 鈫?n53901
+    └─ [XOR] $xor$testcase/test12/test12.v:41837$35481 鈫?$xor$testcase/test12/test12.v:41837$35481_Y
+    └─ [NOT] $not$testcase/test12/test12.v:41837$35482 鈫?n56983
+    └─ [XOR] $xor$testcase/test12/test12.v:33620$27250 鈫?$xor$testcase/test12/test12.v:33620$27250_Y
+    └─ [NOT] $not$testcase/test12/test12.v:33620$27251 鈫?n66152
+    └─ [XOR] $xor$testcase/test12/test12.v:26883$18587 鈫?$xor$testcase/test12/test12.v:26883$18587_Y
+    └─ [NOT] $not$testcase/test12/test12.v:26883$18588 鈫?n72613
+    └─ [XOR] $xor$testcase/test12/test12.v:23999$14613 鈫?$xor$testcase/test12/test12.v:23999$14613_Y
+    └─ [NOT] $not$testcase/test12/test12.v:23999$14614 鈫?n74447
+    └─ [XOR] $xor$testcase/test12/test12.v:21913$11948 鈫?n26[0]
+#END 8
+#RESPONSE 9
+OK: Maximum logic depth from 'n24[1]' to 'n26[1]': 18 gate level(s).
+Example longest path:
+    n24[1]
+    └─ [XOR] $xor$testcase/test12/test12.v:42174$36017 鈫?$xor$testcase/test12/test12.v:42174$36017_Y
+    └─ [NOT] $not$testcase/test12/test12.v:42174$36018 鈫?n55545
+    └─ [OR] $or$testcase/test12/test12.v:39523$33154 鈫?n59297
+    └─ [AND] $and$testcase/test12/test12.v:35076$28611 鈫?n63785
+    └─ [XOR] $xor$testcase/test12/test12.v:31469$24765 鈫?$xor$testcase/test12/test12.v:31469$24765_Y
+    └─ [NOT] $not$testcase/test12/test12.v:31469$24766 鈫?n67332
+    └─ [XOR] $xor$testcase/test12/test12.v:28527$20970 鈫?$xor$testcase/test12/test12.v:28527$20970_Y
+    └─ [NOT] $not$testcase/test12/test12.v:28527$20971 鈫?n70322
+    └─ [XOR] $xor$testcase/test12/test12.v:25103$16029 鈫?$xor$testcase/test12/test12.v:25103$16029_Y
+    └─ [NOT] $not$testcase/test12/test12.v:25103$16030 鈫?n73649
+    └─ [XOR] $xor$testcase/test12/test12.v:23061$13474 鈫?$xor$testcase/test12/test12.v:23061$13474_Y
+    └─ [NOT] $not$testcase/test12/test12.v:23061$13475 鈫?n76022
+    └─ [XOR] $xor$testcase/test12/test12.v:21068$10841 鈫?n77868
+    └─ [NOT] $not$testcase/test12/test12.v:21068$10842 鈫?n77867
+    └─ [OR] $or$testcase/test12/test12.v:20026$9674 鈫?n79000
+    └─ [AND] $and$testcase/test12/test12.v:19402$8841 鈫?n79375
+    └─ [XOR] $xor$testcase/test12/test12.v:18374$7473 鈫?$xor$testcase/test12/test12.v:18374$7473_Y
+    └─ [NOT] $not$testcase/test12/test12.v:18374$7474 鈫?n26[1]
+#END 9
+#RESPONSE 10
+OK: Net 'g0' has fanout 1.
+#END 10
+#RESPONSE 11
+OK: Design written to 'test12_out.v' successfully.
+#END 11

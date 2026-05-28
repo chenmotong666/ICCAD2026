@@ -1,0 +1,38 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test72'. All responses will be logged to 'test72.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test72/test72.v' successfully.
+  Cells: 29
+  Primary inputs:  n0, n1, n2, n2[1], n2[2], n2[3], n3, n3[1], n3[2], n3[3], n4, n5
+  Primary outputs: n11, n12, n8, n6, n7, n9, n10
+  Gate breakdown:  {'and': 9, 'not': 7, 'or': 9, 'xor': 4}
+#END 2
+#RESPONSE 3
+OK: Total gates: 29
+Gate breakdown:
+  AND  : 9
+  OR   : 9
+  NOT  : 7
+  NAND : 0
+  NOR  : 0
+  XOR  : 4
+  XNOR : 0
+  BUF  : 0
+  DFF  : 0
+#END 3
+#RESPONSE 4
+OK: No path found from 'n2[0]' to 'n6' (avoiding 'n14').
+#END 4
+#RESPONSE 5
+OK: Found 1 path(s) from 'n2[1]' to 'n7'.
+Path 1:
+  n2[1]
+  -> [AND] $and$testcase/test72/test72.v:24$9 鈫?n30
+  -> [XOR] $xor$testcase/test72/test72.v:25$10 鈫?n31
+  -> [OR] $or$testcase/test72/test72.v:26$11 鈫?n7
+Result capped at 20 path(s) with a 5 second traversal limit.
+#END 5
+#RESPONSE 6
+OK: Design written to 'test72_out.v' successfully.
+#END 6

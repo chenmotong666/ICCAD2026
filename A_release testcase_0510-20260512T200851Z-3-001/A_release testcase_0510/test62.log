@@ -1,0 +1,52 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test62'. All responses will be logged to 'test62.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test62/test62.v' successfully.
+  Cells: 33
+  Primary inputs:  n0, n1, n2, n3, n4, n5, n6, n7, n8
+  Primary outputs: n20, n22, n21, n23
+  Gate breakdown:  {'and': 15, 'not': 8, 'or': 6, 'xor': 4}
+#END 2
+#RESPONSE 3
+OK: Total gates: 33
+Gate breakdown:
+  AND  : 15
+  OR   : 6
+  NOT  : 8
+  NAND : 0
+  NOR  : 0
+  XOR  : 4
+  XNOR : 0
+  BUF  : 0
+  DFF  : 0
+#END 3
+#RESPONSE 4
+OK: Balance-buffer insertion from 'n2' (15 buffer(s) total):
+  n20: 0 buffer(s) inserted
+  n21: 7 buffer(s) inserted
+  n22: 8 buffer(s) inserted
+#END 4
+#RESPONSE 5
+OK: buf_added: 15
+#END 5
+#RESPONSE 6
+OK: Maximum combinational depth: 10 gate level(s).
+Source: n2
+Output: n20
+Example path:
+  n2
+  -> [AND] $and$testcase/test62/test62.v:5$1 鈫?n100
+  -> [OR] $or$testcase/test62/test62.v:6$2 鈫?n101
+  -> [NOT] $not$testcase/test62/test62.v:7$32 鈫?n102
+  -> [XOR] $xor$testcase/test62/test62.v:8$3 鈫?n103
+  -> [AND] $and$testcase/test62/test62.v:9$4 鈫?$and$testcase/test62/test62.v:9$4_Y
+  -> [NOT] $not$testcase/test62/test62.v:9$5 鈫?n104
+  -> [OR] $or$testcase/test62/test62.v:10$6 鈫?$or$testcase/test62/test62.v:10$6_Y
+  -> [NOT] $not$testcase/test62/test62.v:10$7 鈫?n105
+  -> [XOR] $xor$testcase/test62/test62.v:11$8 鈫?$xor$testcase/test62/test62.v:11$8_Y
+  -> [NOT] $not$testcase/test62/test62.v:11$9 鈫?n20
+#END 6
+#RESPONSE 7
+OK: Design written to 'test62_out.v' successfully.
+#END 7

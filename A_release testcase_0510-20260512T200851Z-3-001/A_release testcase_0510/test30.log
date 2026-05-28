@@ -1,0 +1,47 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test30'. All responses will be logged to 'test30.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test30/test30.v' successfully.
+  Cells: 1523
+  Primary inputs:  n0, n1, n2, n3, n4, n5, n6, n6[1], n6[2], n6[3], n6[4], n6[5], n6[6], n6[7]
+  Primary outputs: n13[0], n13[9], n13[10], n8, n12[0], n12[1], n12[2], n12[3], n12[4], n13[11], n12[5], n12[6], n12[7], n12[8], n12[9], n12[10], n12[11], n12[12], n12[13], n12[14], n13[12], n12[15], n10, n11[0], n11[1], n11[2], n11[3], n11[4], n11[5], n11[6], n11[7], n13[13], ... (51 more)
+  Gate breakdown:  {'and': 264, 'dff': 150, 'not': 659, 'or': 349, 'xor': 101}
+#END 2
+#RESPONSE 3
+OK: Total gates: 1523
+Gate breakdown:
+  AND  : 264
+  OR   : 349
+  NOT  : 659
+  NAND : 0
+  NOR  : 0
+  XOR  : 101
+  XNOR : 0
+  BUF  : 0
+  DFF  : 150
+#END 3
+#RESPONSE 4
+OK: Inserted 445 buffer(s) across the design to limit PI/cell fanout to <= 4. Maximum observed fanout is now 4.
+#END 4
+#RESPONSE 5
+OK: Performed whole-design depth cleanup/restructuring pass: constant simplifications=445, collapsed NOT-NOT pairs=0, merged structural duplicates=9, cone optimizations tried=6, depth-improved cones=0. Maximum combinational depth: 9 -> 6.
+#END 5
+#RESPONSE 6
+OK: Dangling cleanup completed; no dangling gates remain.
+#END 6
+#RESPONSE 7
+OK: Not found: "Cannot resolve 'top': not a node, wire, or port name."
+#END 7
+#RESPONSE 8
+OK: Cone of 'n8' meets the requested depth after earlier transformations: depth 0 <= 4.
+#END 8
+#RESPONSE 9
+OK: Inverter cleanup pass completed; no back-to-back NOT pairs remain.
+#END 9
+#RESPONSE 10
+OK: Merged 3 structural duplicate gate(s).
+#END 10
+#RESPONSE 11
+OK: Design written to 'testcase/test30/test30_out.v' successfully.
+#END 11

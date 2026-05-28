@@ -1,0 +1,7 @@
+This is the beginning of testcase test47. Please output a copy of the log into test47.log.
+Please load the design from the file test47.v located in the directory testcase/test47/.
+Please count all the gates in this design and report the total count broken down by gate type (AND, OR, NOT, NAND, NOR, XOR, XNOR, BUF, DFF).
+List all XOR gates in this design.
+Convert every XOR gate in this design to an equivalent 4-NAND circuit. Ensure the design functionality does not change.
+How many NAND gates are now in the design after the XOR-to-NAND conversion?
+Please write the current design to the output file test47_out.v.

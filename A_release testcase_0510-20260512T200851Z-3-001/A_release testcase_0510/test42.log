@@ -1,0 +1,45 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test42'. All responses will be logged to 'test42.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test42/test42.v' successfully.
+  Cells: 33
+  Primary inputs:  n0, n1, n2, n3, n4, n5, n6, n7, n8
+  Primary outputs: n20, n22, n21, n23
+  Gate breakdown:  {'and': 15, 'not': 8, 'or': 6, 'xor': 4}
+#END 2
+#RESPONSE 3
+OK: Total gates: 33
+Gate breakdown:
+  AND  : 15
+  OR   : 6
+  NOT  : 8
+  NAND : 0
+  NOR  : 0
+  XOR  : 4
+  XNOR : 0
+  BUF  : 0
+  DFF  : 0
+#END 3
+#RESPONSE 4
+OK: Path found:
+  n2
+  → [AND] $and$testcase/test42/test42.v:13$10 鈫?n107
+  → [OR] $or$testcase/test42/test42.v:14$11 鈫?n108
+  → [XOR] $xor$testcase/test42/test42.v:15$12 鈫?n21
+#END 4
+#RESPONSE 5
+OK: Found 1 path(s) from 'n2' to 'n21'.
+Path 1:
+  n2
+  -> [AND] $and$testcase/test42/test42.v:13$10 鈫?n107
+  -> [OR] $or$testcase/test42/test42.v:14$11 鈫?n108
+  -> [XOR] $xor$testcase/test42/test42.v:15$12 鈫?n21
+Result capped at 20 path(s) with a 5 second traversal limit.
+#END 5
+#RESPONSE 6
+OK: Shared fanin gates between 'n20' and 'n21': 0
+#END 6
+#RESPONSE 7
+OK: Design written to 'test42_out.v' successfully.
+#END 7

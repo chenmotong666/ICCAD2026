@@ -1,0 +1,112 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test33'. All responses will be logged to 'test33.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test33/test33.v' successfully.
+  Cells: 112830
+  Primary inputs:  n0, n1, n2, n3, n4, n5, n5[1], n5[2], n5[3], n5[4], n5[5], n5[6], n5[7], n6, n6[1], n6[2], n6[3], n6[4], n6[5], n7, n7[10], n7[11], n7[12], n7[13], n7[14], n7[15], n7[16], n7[17], n7[18], n7[19], n7[1], n7[20], ... (19 more)
+  Primary outputs: n12[31], n12[21], n12[28], n12[20], n12[19], n12[18], n12[29], n12[17], n12[16], n12[27], n12[26], n12[25], n12[30], n12[24], n12[23], n12[22], n12[9], n12[15], n12[8], n12[11], n12[7], n12[6], n12[13], n12[14], n12[12], n12[10], n12[0], n12[5], n12[4], n12[1], n12[3], n12[2], ... (55 more)
+  Gate breakdown:  {'and': 35261, 'dff': 4211, 'not': 53298, 'or': 11957, 'xor': 8103}
+#END 2
+#RESPONSE 3
+OK: Total gates: 112830
+Gate breakdown:
+  AND  : 35261
+  OR   : 11957
+  NOT  : 53298
+  NAND : 0
+  NOR  : 0
+  XOR  : 8103
+  XNOR : 0
+  BUF  : 0
+  DFF  : 4211
+#END 3
+#RESPONSE 4
+OK: Direct PI-to-PO wire connections: 0
+#END 4
+#RESPONSE 5
+OK: No explicit XNOR cells remained after normalization; removed 844 dangling gate(s) during NOR cleanup.
+#END 5
+#RESPONSE 6
+OK: NOR gates: 0
+#END 6
+#RESPONSE 7
+OK: Dangling cleanup already completed; previous pass removed 844 dangling gate(s).
+#END 7
+#RESPONSE 8
+OK: dangling_removed: 844
+#END 8
+#RESPONSE 9
+OK: No 'and' gates found in cone of 'n8'.
+#END 9
+#RESPONSE 10
+OK: Gate breakdown in cone of 'n8':
+  TOTAL: 1
+  AND  : 0
+  OR   : 0
+  NOT  : 0
+  NAND : 0
+  NOR  : 0
+  XOR  : 0
+  XNOR : 0
+  BUF  : 0
+  DFF  : 1
+#END 10
+#RESPONSE 11
+OK: No. 'n55146' and 'n55104' do not match structurally, and the combined support is too large for exhaustive local simulation.
+#END 11
+#RESPONSE 12
+OK: Found 1 path(s) from 'n3' to 'n9'.
+Path 1:
+  n3
+  -> [AND] $and$testcase/test33/test33.v:40338$54164 鈫?$and$testcase/test33/test33.v:40338$54164_Y
+  -> [NOT] $not$testcase/test33/test33.v:40338$54165 鈫?n27223
+  -> [AND] $and$testcase/test33/test33.v:39655$52914 鈫?$and$testcase/test33/test33.v:39655$52914_Y
+  -> [NOT] $not$testcase/test33/test33.v:39655$52915 鈫?n27870
+  -> [OR] $or$testcase/test33/test33.v:34062$42491 鈫?$or$testcase/test33/test33.v:34062$42491_Y
+  -> [NOT] $not$testcase/test33/test33.v:34062$42492 鈫?n33381
+  -> [AND] $and$testcase/test33/test33.v:18532$11946 鈫?n49339
+  -> [AND] $and$testcase/test33/test33.v:17778$10479 鈫?$and$testcase/test33/test33.v:17778$10479_Y
+  -> [NOT] $not$testcase/test33/test33.v:17778$10480 鈫?n49742
+  -> [AND] $and$testcase/test33/test33.v:17408$9748 鈫?$and$testcase/test33/test33.v:17408$9748_Y
+  -> [NOT] $not$testcase/test33/test33.v:17408$9749 鈫?n50112
+  -> [DFF] g7717 鈫?n60287
+  -> [AND] $and$testcase/test33/test33.v:8142$305 鈫?$and$testcase/test33/test33.v:8142$305_Y
+  -> [NOT] $not$testcase/test33/test33.v:8142$306 鈫?n56798
+  -> [OR] $or$testcase/test33/test33.v:12549$8581 鈫?n55139
+  -> [NOT] $not$testcase/test33/test33.v:40689$107330 鈫?n26841
+  -> [DFF] g5965 鈫?n9
+Result capped at 20 path(s) with a 5 second traversal limit.
+#END 12
+#RESPONSE 13
+OK: Yes — every combinational path from 'n1' to 'n8' passes through 'n1'.
+#END 13
+#RESPONSE 14
+OK: Cone of 'n8' has no remaining combinational gates after earlier transformations; the depth target is satisfied.
+#END 14
+#RESPONSE 15
+OK: Current design is equivalent to the original by the recorded equivalence-preserving transformation rules applied in this session (111986 cell(s)).
+#END 15
+#RESPONSE 16
+OK: No. Removing 'n55104' breaks 0 PI-to-PO reachable pair(s).
+#END 16
+#RESPONSE 17
+OK: Primary input bit widths:
+  n0: 1
+  n1: 1
+  n2: 1
+  n3: 1
+  n4: 1
+  n5: 8
+  n6: 6
+  n7: 32
+#END 17
+#RESPONSE 18
+OK: Merged 1146 structural duplicate gate(s).
+#END 18
+#RESPONSE 19
+OK: merged_gates: 1146
+#END 19
+#RESPONSE 20
+OK: Design written to 'test33_out.v' successfully.
+#END 20

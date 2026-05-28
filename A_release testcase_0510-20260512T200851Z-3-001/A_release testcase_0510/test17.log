@@ -1,0 +1,420 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test17'. All responses will be logged to 'test17.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test17/test17.v' successfully.
+  Cells: 2868
+  Primary inputs:  n0, n0[10], n0[11], n0[12], n0[1], n0[2], n0[3], n0[4], n0[5], n0[6], n0[7], n0[8], n0[9], n1, n10, n11, n12, n13, n14, n15, n16, n17, n18, n19, n1[10], n1[11], n1[12], n1[1], n1[2], n1[3], n1[4], n1[5], ... (109 more)
+  Primary outputs: n42[12], n42[11], n42[10], n42[9], n42[8], n42[7], n42[6], n42[5], n42[4], n42[3], n42[2], n42[1], n42[0], n43[12], n43[11], n43[10], n43[9], n43[8], n43[7], n43[6], n43[5], n43[4], n43[3], n43[2], n43[1], n43[0]
+  Gate breakdown:  {'and': 734, 'not': 932, 'or': 767, 'xor': 435}
+#END 2
+#RESPONSE 3
+OK: Total gates: 2868
+Gate breakdown:
+  AND  : 734
+  OR   : 767
+  NOT  : 932
+  NAND : 0
+  NOR  : 0
+  XOR  : 435
+  XNOR : 0
+  BUF  : 0
+  DFF  : 0
+#END 3
+#RESPONSE 4
+OK: Path found:
+  n7
+  → [XOR] $xor$testcase/test17/test17.v:2433$1312 鈫?n114
+  → [OR] $or$testcase/test17/test17.v:1984$911 鈫?n122
+  → [AND] $and$testcase/test17/test17.v:1967$888 鈫?n2261
+  → [AND] $and$testcase/test17/test17.v:877$456 鈫?n1744
+  → [OR] $or$testcase/test17/test17.v:716$297 鈫?n1869
+  → [OR] $or$testcase/test17/test17.v:436$15 鈫?n2248
+  → [AND] $and$testcase/test17/test17.v:1650$728 鈫?n2973
+  → [OR] $or$testcase/test17/test17.v:1648$725 鈫?n2214
+  → [XOR] $xor$testcase/test17/test17.v:3456$2220 鈫?$xor$testcase/test17/test17.v:3456$2220_Y
+  → [NOT] $not$testcase/test17/test17.v:3456$2221 鈫?n42[0]
+#END 4
+#RESPONSE 5
+OK: No path found from 'n8' to 'n42[1]' (avoiding 'n2116').
+#END 5
+#RESPONSE 6
+OK: No paths found from 'n8' to 'n42[1]'.
+#END 6
+#RESPONSE 7
+OK: No paths found from 'n9' to 'n42[0]'.
+#END 7
+#RESPONSE 8
+OK: Maximum logic depth from 'n7' to 'n42[0]': 18 gate level(s).
+Example longest path:
+    n7
+    └─ [XOR] $xor$testcase/test17/test17.v:418$4 鈫?n2119
+    └─ [XOR] $xor$testcase/test17/test17.v:2444$1332 鈫?$xor$testcase/test17/test17.v:2444$1332_Y
+    └─ [NOT] $not$testcase/test17/test17.v:2444$1333 鈫?n502
+    └─ [XOR] $xor$testcase/test17/test17.v:2433$1312 鈫?n114
+    └─ [NOT] $not$testcase/test17/test17.v:1933$2875 鈫?n44
+    └─ [OR] $or$testcase/test17/test17.v:1907$843 鈫?n71
+    └─ [AND] $and$testcase/test17/test17.v:1902$835 鈫?n2408
+    └─ [AND] $and$testcase/test17/test17.v:1419$637 鈫?n2703
+    └─ [OR] $or$testcase/test17/test17.v:1350$538 鈫?n2786
+    └─ [OR] $or$testcase/test17/test17.v:1338$526 鈫?n2395
+    └─ [NOT] $not$testcase/test17/test17.v:3297$3291 鈫?n1157
+    └─ [XOR] $xor$testcase/test17/test17.v:3312$2075 鈫?n2526
+    └─ [AND] $and$testcase/test17/test17.v:1251$496 鈫?n2593
+    └─ [OR] $or$testcase/test17/test17.v:1243$488 鈫?n2228
+    └─ [XOR] $xor$testcase/test17/test17.v:3462$2230 鈫?$xor$testcase/test17/test17.v:3462$2230_Y
+    └─ [NOT] $not$testcase/test17/test17.v:3462$2231 鈫?n1364
+    └─ [XOR] $xor$testcase/test17/test17.v:3456$2220 鈫?$xor$testcase/test17/test17.v:3456$2220_Y
+    └─ [NOT] $not$testcase/test17/test17.v:3456$2221 鈫?n42[0]
+#END 8
+#RESPONSE 9
+OK: No combinational path found from 'n8' to 'n42[1]'.
+#END 9
+#RESPONSE 10
+OK: No combinational path found from 'n9' to 'n42[0]'.
+#END 10
+#RESPONSE 11
+OK: Net 'g0' has fanout 0.
+#END 11
+#RESPONSE 12
+OK: 'g0' has no immediate successors.
+#END 12
+#RESPONSE 13
+OK: Transitive fanin cone of 'n42[0]' contains 124 gate(s).
+Gate breakdown: {'and': 32, 'not': 43, 'or': 32, 'xor': 17}
+  [AND] $and$testcase/test17/test17.v:1251$496 鈫?n2593
+  [AND] $and$testcase/test17/test17.v:1268$513 鈫?n2549
+  [AND] $and$testcase/test17/test17.v:1375$576 鈫?n2761
+  [AND] $and$testcase/test17/test17.v:1417$634 鈫?n2635
+  [AND] $and$testcase/test17/test17.v:1419$637 鈫?n2703
+  [AND] $and$testcase/test17/test17.v:1516$674 鈫?n2215
+  [AND] $and$testcase/test17/test17.v:1524$682 鈫?n2810
+  [AND] $and$testcase/test17/test17.v:1537$687 鈫?n2805
+  [AND] $and$testcase/test17/test17.v:1650$728 鈫?n2973
+  [AND] $and$testcase/test17/test17.v:1902$835 鈫?n2408
+  [AND] $and$testcase/test17/test17.v:1967$888 鈫?n2261
+  [AND] $and$testcase/test17/test17.v:2040$947 鈫?n2287
+  [AND] $and$testcase/test17/test17.v:2107$997 鈫?n2300
+  [AND] $and$testcase/test17/test17.v:2169$1046 鈫?n1715
+  [AND] $and$testcase/test17/test17.v:2234$1114 鈫?n2346
+  [AND] $and$testcase/test17/test17.v:530$109 鈫?n2040
+  [AND] $and$testcase/test17/test17.v:537$116 鈫?n1084
+  [AND] $and$testcase/test17/test17.v:573$152 鈫?n2002
+  [AND] $and$testcase/test17/test17.v:608$187 鈫?n1567
+  [AND] $and$testcase/test17/test17.v:611$190 鈫?n1971
+  [AND] $and$testcase/test17/test17.v:630$209 鈫?n1472
+  [AND] $and$testcase/test17/test17.v:652$231 鈫?n1952
+  [AND] $and$testcase/test17/test17.v:675$254 鈫?n1480
+  [AND] $and$testcase/test17/test17.v:701$282 鈫?n1885
+  [AND] $and$testcase/test17/test17.v:757$337 鈫?n1839
+  [AND] $and$testcase/test17/test17.v:769$349 鈫?n1864
+  [AND] $and$testcase/test17/test17.v:806$386 鈫?n1476
+  [AND] $and$testcase/test17/test17.v:818$395 鈫?n1792
+  [AND] $and$testcase/test17/test17.v:827$404 鈫?n2441
+  [AND] $and$testcase/test17/test17.v:840$417 鈫?n1781
+  [AND] $and$testcase/test17/test17.v:846$424 鈫?n1508
+  [AND] $and$testcase/test17/test17.v:877$456 鈫?n1744
+  [NOT] $not$testcase/test17/test17.v:1047$2516 鈫?n1602
+  [NOT] $not$testcase/test17/test17.v:1102$2571 鈫?n1547
+  [NOT] $not$testcase/test17/test17.v:1299$2668 鈫?n2503
+  [NOT] $not$testcase/test17/test17.v:1364$558 鈫?n2772
+  [NOT] $not$testcase/test17/test17.v:1403$610 鈫?n2719
+  [NOT] $not$testcase/test17/test17.v:1422$642 鈫?n2700
+  [NOT] $not$testcase/test17/test17.v:1439$2689 鈫?n2684
+  [NOT] $not$testcase/test17/test17.v:1452$2701 鈫?n2672
+  [NOT] $not$testcase/test17/test17.v:1506$2742 鈫?n2823
+  [NOT] $not$testcase/test17/test17.v:1507$2743 鈫?n2822
+  [NOT] $not$testcase/test17/test17.v:1649$727 鈫?n2974
+  [NOT] $not$testcase/test17/test17.v:1651$2784 鈫?n2972
+  [NOT] $not$testcase/test17/test17.v:1914$2856 鈫?n64
+  [NOT] $not$testcase/test17/test17.v:1933$2875 鈫?n44
+  [NOT] $not$testcase/test17/test17.v:1985$2878 鈫?n116
+  [NOT] $not$testcase/test17/test17.v:2008$2901 鈫?n92
+  [NOT] $not$testcase/test17/test17.v:2058$2904 鈫?n176
+  [NOT] $not$testcase/test17/test17.v:2081$2927 鈫?n152
+  [NOT] $not$testcase/test17/test17.v:2116$2930 鈫?n230
+  [NOT] $not$testcase/test17/test17.v:2133$2947 鈫?n212
+  [NOT] $not$testcase/test17/test17.v:2187$2952 鈫?n257
+  [NOT] $not$testcase/test17/test17.v:2188$2953 鈫?n256
+  [NOT] $not$testcase/test17/test17.v:2272$2956 鈫?n341
+  [NOT] $not$testcase/test17/test17.v:2301$2985 鈫?n340
+  [NOT] $not$testcase/test17/test17.v:2357$1233 鈫?n428
+  [NOT] $not$testcase/test17/test17.v:2444$1333 鈫?n502
+  [NOT] $not$testcase/test17/test17.v:2532$1430 鈫?n621
+  [NOT] $not$testcase/test17/test17.v:2565$1474 鈫?n592
+  [NOT] $not$testcase/test17/test17.v:2731$1647 鈫?n748
+  [NOT] $not$testcase/test17/test17.v:2757$3046 鈫?n708
+  [NOT] $not$testcase/test17/test17.v:2774$3063 鈫?n699
+  [NOT] $not$testcase/test17/test17.v:3297$3291 鈫?n1157
+  [NOT] $not$testcase/test17/test17.v:3456$2221 鈫?n42[0]
+  [NOT] $not$testcase/test17/test17.v:3462$2231 鈫?n1364
+  [NOT] $not$testcase/test17/test17.v:677$257 鈫?n1909
+  [NOT] $not$testcase/test17/test17.v:678$259 鈫?n1908
+  [NOT] $not$testcase/test17/test17.v:732$2376 鈫?n1865
+  [NOT] $not$testcase/test17/test17.v:879$459 鈫?n1742
+  [NOT] $not$testcase/test17/test17.v:881$462 鈫?n1740
+  [NOT] $not$testcase/test17/test17.v:889$2383 鈫?n1736
+  [NOT] $not$testcase/test17/test17.v:891$2385 鈫?n1734
+  [NOT] $not$testcase/test17/test17.v:892$2386 鈫?n1733
+  [NOT] $not$testcase/test17/test17.v:895$2389 鈫?n1730
+  [OR] $or$testcase/test17/test17.v:1243$488 鈫?n2228
+  [OR] $or$testcase/test17/test17.v:1338$526 鈫?n2395
+  [OR] $or$testcase/test17/test17.v:1350$538 鈫?n2786
+  [OR] $or$testcase/test17/test17.v:1364$557 鈫?$or$testcase/test17/test17.v:1364$557_Y
+  [OR] $or$testcase/test17/test17.v:1386$587 鈫?n2750
+  [OR] $or$testcase/test17/test17.v:1403$609 鈫?$or$testcase/test17/test17.v:1403$609_Y
+  [OR] $or$testcase/test17/test17.v:1422$641 鈫?$or$testcase/test17/test17.v:1422$641_Y
+  [OR] $or$testcase/test17/test17.v:1438$665 鈫?n2633
+  [OR] $or$testcase/test17/test17.v:1648$725 鈫?n2214
+  [OR] $or$testcase/test17/test17.v:1649$726 鈫?$or$testcase/test17/test17.v:1649$726_Y
+  [OR] $or$testcase/test17/test17.v:1907$843 鈫?n71
+  [OR] $or$testcase/test17/test17.v:1913$850 鈫?n65
+  [OR] $or$testcase/test17/test17.v:1976$902 鈫?n125
+  [OR] $or$testcase/test17/test17.v:1984$911 鈫?n122
+  [OR] $or$testcase/test17/test17.v:2049$961 鈫?n185
+  [OR] $or$testcase/test17/test17.v:2057$970 鈫?n182
+  [OR] $or$testcase/test17/test17.v:2111$1003 鈫?n235
+  [OR] $or$testcase/test17/test17.v:2113$1006 鈫?n233
+  [OR] $or$testcase/test17/test17.v:2181$1064 鈫?n262
+  [OR] $or$testcase/test17/test17.v:2186$1069 鈫?n263
+  [OR] $or$testcase/test17/test17.v:2262$1156 鈫?n350
+  [OR] $or$testcase/test17/test17.v:2271$1165 鈫?n353
+  [OR] $or$testcase/test17/test17.v:436$15 鈫?n2248
+  [OR] $or$testcase/test17/test17.v:465$44 鈫?n2103
+  [OR] $or$testcase/test17/test17.v:502$81 鈫?n2068
+  [OR] $or$testcase/test17/test17.v:578$157 鈫?n1997
+  [OR] $or$testcase/test17/test17.v:677$256 鈫?$or$testcase/test17/test17.v:677$256_Y
+  [OR] $or$testcase/test17/test17.v:678$258 鈫?$or$testcase/test17/test17.v:678$258_Y
+  [OR] $or$testcase/test17/test17.v:716$297 鈫?n1869
+  [OR] $or$testcase/test17/test17.v:791$371 鈫?n2278
+  [OR] $or$testcase/test17/test17.v:879$458 鈫?$or$testcase/test17/test17.v:879$458_Y
+  [OR] $or$testcase/test17/test17.v:881$461 鈫?$or$testcase/test17/test17.v:881$461_Y
+  [XOR] $xor$testcase/test17/test17.v:1191$471 鈫?n1458
+  [XOR] $xor$testcase/test17/test17.v:1205$478 鈫?n1454
+  [XOR] $xor$testcase/test17/test17.v:2346$1212 鈫?n174
+  [XOR] $xor$testcase/test17/test17.v:2357$1232 鈫?$xor$testcase/test17/test17.v:2357$1232_Y
+  [XOR] $xor$testcase/test17/test17.v:2433$1312 鈫?n114
+  [XOR] $xor$testcase/test17/test17.v:2444$1332 鈫?$xor$testcase/test17/test17.v:2444$1332_Y
+  [XOR] $xor$testcase/test17/test17.v:2521$1414 鈫?n1697
+  [XOR] $xor$testcase/test17/test17.v:2532$1429 鈫?$xor$testcase/test17/test17.v:2532$1429_Y
+  [XOR] $xor$testcase/test17/test17.v:2565$1473 鈫?$xor$testcase/test17/test17.v:2565$1473_Y
+  [XOR] $xor$testcase/test17/test17.v:2626$1531 鈫?n2372
+  [XOR] $xor$testcase/test17/test17.v:2731$1646 鈫?$xor$testcase/test17/test17.v:2731$1646_Y
+  [XOR] $xor$testcase/test17/test17.v:2788$1666 鈫?n2313
+  [XOR] $xor$testcase/test17/test17.v:2871$1780 鈫?n2539
+  [XOR] $xor$testcase/test17/test17.v:3312$2075 鈫?n2526
+  [XOR] $xor$testcase/test17/test17.v:3456$2220 鈫?$xor$testcase/test17/test17.v:3456$2220_Y
+  [XOR] $xor$testcase/test17/test17.v:3462$2230 鈫?$xor$testcase/test17/test17.v:3462$2230_Y
+  [XOR] $xor$testcase/test17/test17.v:418$4 鈫?n2119
+#END 13
+#RESPONSE 14
+OK: Transitive fanout cone of 'n7' contains 1213 gate(s).
+Gate breakdown: {'and': 312, 'not': 297, 'or': 397, 'xor': 207}
+  [AND] $and$testcase/test17/test17.v:1250$495 鈫?n2594
+  [AND] $and$testcase/test17/test17.v:1251$496 鈫?n2593
+  [AND] $and$testcase/test17/test17.v:1252$497 鈫?n2591
+  [AND] $and$testcase/test17/test17.v:1253$498 鈫?n2590
+  [AND] $and$testcase/test17/test17.v:1254$499 鈫?n2589
+  [AND] $and$testcase/test17/test17.v:1255$500 鈫?n2588
+  [AND] $and$testcase/test17/test17.v:1256$501 鈫?n2587
+  [AND] $and$testcase/test17/test17.v:1257$502 鈫?n2586
+  [AND] $and$testcase/test17/test17.v:1258$503 鈫?n2585
+  [AND] $and$testcase/test17/test17.v:1259$504 鈫?n2584
+  [AND] $and$testcase/test17/test17.v:1260$505 鈫?n2583
+  [AND] $and$testcase/test17/test17.v:1261$506 鈫?n2582
+  [AND] $and$testcase/test17/test17.v:1262$507 鈫?n2581
+  [AND] $and$testcase/test17/test17.v:1263$508 鈫?n2580
+  [AND] $and$testcase/test17/test17.v:1264$509 鈫?n2579
+  [AND] $and$testcase/test17/test17.v:1265$510 鈫?n2552
+  [AND] $and$testcase/test17/test17.v:1266$511 鈫?n2551
+  [AND] $and$testcase/test17/test17.v:1267$512 鈫?n2550
+  [AND] $and$testcase/test17/test17.v:1268$513 鈫?n2549
+  [AND] $and$testcase/test17/test17.v:1269$514 鈫?n2548
+  [AND] $and$testcase/test17/test17.v:1270$515 鈫?n2547
+  [AND] $and$testcase/test17/test17.v:1271$516 鈫?n2546
+  [AND] $and$testcase/test17/test17.v:1272$517 鈫?n2545
+  [AND] $and$testcase/test17/test17.v:1273$518 鈫?n2544
+  [AND] $and$testcase/test17/test17.v:1274$519 鈫?n2543
+  [AND] $and$testcase/test17/test17.v:1275$520 鈫?n2542
+  [AND] $and$testcase/test17/test17.v:1412$627 鈫?n2710
+  [AND] $and$testcase/test17/test17.v:1414$630 鈫?n2708
+  [AND] $and$testcase/test17/test17.v:1415$631 鈫?n2707
+  [AND] $and$testcase/test17/test17.v:1419$637 鈫?n2703
+  [AND] $and$testcase/test17/test17.v:1420$638 鈫?n2702
+  [AND] $and$testcase/test17/test17.v:1423$643 鈫?n2699
+  [AND] $and$testcase/test17/test17.v:1426$648 鈫?n2696
+  [AND] $and$testcase/test17/test17.v:1427$649 鈫?n2695
+  [AND] $and$testcase/test17/test17.v:1428$650 鈫?n2694
+  [AND] $and$testcase/test17/test17.v:1430$653 鈫?n2692
+  [AND] $and$testcase/test17/test17.v:1432$656 鈫?n2690
+  [AND] $and$testcase/test17/test17.v:1436$663 鈫?n2686
+  [AND] $and$testcase/test17/test17.v:1437$664 鈫?n2685
+  [AND] $and$testcase/test17/test17.v:1577$701 鈫?n2932
+  [AND] $and$testcase/test17/test17.v:1578$702 鈫?n2930
+  [AND] $and$testcase/test17/test17.v:1579$703 鈫?n2929
+  [AND] $and$testcase/test17/test17.v:1580$704 鈫?n2928
+  [AND] $and$testcase/test17/test17.v:1581$705 鈫?n2927
+  [AND] $and$testcase/test17/test17.v:1582$706 鈫?n2926
+  [AND] $and$testcase/test17/test17.v:1583$707 鈫?n2925
+  [AND] $and$testcase/test17/test17.v:1584$708 鈫?n2924
+  [AND] $and$testcase/test17/test17.v:1585$709 鈫?n2923
+  [AND] $and$testcase/test17/test17.v:1586$710 鈫?n2922
+  [AND] $and$testcase/test17/test17.v:1588$712 鈫?n2920
+  [AND] $and$testcase/test17/test17.v:1589$713 鈫?n2919
+  [AND] $and$testcase/test17/test17.v:1590$714 鈫?n2918
+  [AND] $and$testcase/test17/test17.v:1591$715 鈫?n2917
+  [AND] $and$testcase/test17/test17.v:1592$716 鈫?n2916
+  [AND] $and$testcase/test17/test17.v:1593$717 鈫?n2915
+  [AND] $and$testcase/test17/test17.v:1594$718 鈫?n2913
+  [AND] $and$testcase/test17/test17.v:1595$719 鈫?n2912
+  [AND] $and$testcase/test17/test17.v:1596$720 鈫?n2911
+  [AND] $and$testcase/test17/test17.v:1597$721 鈫?n2910
+  [AND] $and$testcase/test17/test17.v:1598$722 鈫?n2909
+  [AND] $and$testcase/test17/test17.v:1599$723 鈫?n2908
+  [AND] $and$testcase/test17/test17.v:1600$724 鈫?n2907
+  [AND] $and$testcase/test17/test17.v:1650$728 鈫?n2973
+  [AND] $and$testcase/test17/test17.v:1693$742 鈫?n3036
+  [AND] $and$testcase/test17/test17.v:1695$744 鈫?n3034
+  [AND] $and$testcase/test17/test17.v:1696$745 鈫?n3033
+  [AND] $and$testcase/test17/test17.v:1697$746 鈫?n3032
+  [AND] $and$testcase/test17/test17.v:1698$747 鈫?n3031
+  [AND] $and$testcase/test17/test17.v:1699$748 鈫?n3030
+  [AND] $and$testcase/test17/test17.v:1700$749 鈫?n3029
+  [AND] $and$testcase/test17/test17.v:1701$750 鈫?n3028
+  [AND] $and$testcase/test17/test17.v:1702$751 鈫?n3027
+  [AND] $and$testcase/test17/test17.v:1703$752 鈫?n3026
+  [AND] $and$testcase/test17/test17.v:1704$753 鈫?n3025
+  [AND] $and$testcase/test17/test17.v:1705$754 鈫?n3024
+  [AND] $and$testcase/test17/test17.v:1706$755 鈫?n3023
+  [AND] $and$testcase/test17/test17.v:1707$756 鈫?n3022
+  [AND] $and$testcase/test17/test17.v:1708$757 鈫?n3021
+  [AND] $and$testcase/test17/test17.v:1709$758 鈫?n3020
+  [AND] $and$testcase/test17/test17.v:1710$759 鈫?n3019
+  [AND] $and$testcase/test17/test17.v:1712$761 鈫?n3017
+  [AND] $and$testcase/test17/test17.v:1713$762 鈫?n3016
+  [AND] $and$testcase/test17/test17.v:1714$763 鈫?n3015
+  [AND] $and$testcase/test17/test17.v:1715$764 鈫?n3014
+  [AND] $and$testcase/test17/test17.v:1716$765 鈫?n3013
+  [AND] $and$testcase/test17/test17.v:1717$766 鈫?n3012
+  [AND] $and$testcase/test17/test17.v:1718$767 鈫?n3011
+  [AND] $and$testcase/test17/test17.v:1802$781 鈫?n3132
+  [AND] $and$testcase/test17/test17.v:1804$783 鈫?n3130
+  [AND] $and$testcase/test17/test17.v:1805$784 鈫?n3129
+  [AND] $and$testcase/test17/test17.v:1806$785 鈫?n3128
+  [AND] $and$testcase/test17/test17.v:1807$786 鈫?n3127
+  [AND] $and$testcase/test17/test17.v:1808$787 鈫?n3126
+  [AND] $and$testcase/test17/test17.v:1809$788 鈫?n3125
+  [AND] $and$testcase/test17/test17.v:1810$789 鈫?n3124
+  [AND] $and$testcase/test17/test17.v:1811$790 鈫?n3123
+  [AND] $and$testcase/test17/test17.v:1812$791 鈫?n3122
+  [AND] $and$testcase/test17/test17.v:1814$793 鈫?n3120
+  [AND] $and$testcase/test17/test17.v:1815$794 鈫?n3119
+  [AND] $and$testcase/test17/test17.v:1816$795 鈫?n3118
+  [AND] $and$testcase/test17/test17.v:1817$796 鈫?n3117
+  [AND] $and$testcase/test17/test17.v:1818$797 鈫?n3116
+  [AND] $and$testcase/test17/test17.v:1819$798 鈫?n3115
+  [AND] $and$testcase/test17/test17.v:1820$799 鈫?n3114
+  [AND] $and$testcase/test17/test17.v:1821$800 鈫?n3113
+  [AND] $and$testcase/test17/test17.v:1822$801 鈫?n3112
+  [AND] $and$testcase/test17/test17.v:1823$802 鈫?n3111
+  [AND] $and$testcase/test17/test17.v:1824$803 鈫?n3110
+  [AND] $and$testcase/test17/test17.v:1825$804 鈫?n3109
+  [AND] $and$testcase/test17/test17.v:1826$805 鈫?n3108
+  [AND] $and$testcase/test17/test17.v:1889$820 鈫?n2412
+  [AND] $and$testcase/test17/test17.v:1895$826 鈫?n80
+  [AND] $and$testcase/test17/test17.v:1898$830 鈫?n78
+  [AND] $and$testcase/test17/test17.v:1902$835 鈫?n2408
+  [AND] $and$testcase/test17/test17.v:1906$842 鈫?n72
+  [AND] $and$testcase/test17/test17.v:1909$846 鈫?n69
+  [AND] $and$testcase/test17/test17.v:1910$847 鈫?n68
+  [AND] $and$testcase/test17/test17.v:1948$865 鈫?n2280
+  [AND] $and$testcase/test17/test17.v:1954$871 鈫?n142
+  [AND] $and$testcase/test17/test17.v:1957$875 鈫?n140
+  [AND] $and$testcase/test17/test17.v:1960$879 鈫?n138
+  [AND] $and$testcase/test17/test17.v:1963$883 鈫?n136
+  [AND] $and$testcase/test17/test17.v:1967$888 鈫?n2261
+  [AND] $and$testcase/test17/test17.v:1973$899 鈫?n128
+  [AND] $and$testcase/test17/test17.v:1975$901 鈫?n126
+  [AND] $and$testcase/test17/test17.v:1977$903 鈫?n124
+  [AND] $and$testcase/test17/test17.v:1979$906 鈫?n121
+  [AND] $and$testcase/test17/test17.v:1981$908 鈫?n119
+  [AND] $and$testcase/test17/test17.v:2402$1271 鈫?n544
+  [AND] $and$testcase/test17/test17.v:2405$1275 鈫?n541
+  [AND] $and$testcase/test17/test17.v:2408$1279 鈫?n538
+  [AND] $and$testcase/test17/test17.v:2411$1283 鈫?n535
+  [AND] $and$testcase/test17/test17.v:2414$1287 鈫?n532
+  [AND] $and$testcase/test17/test17.v:2417$1291 鈫?n529
+  [AND] $and$testcase/test17/test17.v:2420$1295 鈫?n526
+  [AND] $and$testcase/test17/test17.v:2423$1299 鈫?n523
+  [AND] $and$testcase/test17/test17.v:2426$1303 鈫?n520
+  [AND] $and$testcase/test17/test17.v:2429$1307 鈫?n517
+  [AND] $and$testcase/test17/test17.v:2432$1311 鈫?n514
+  [AND] $and$testcase/test17/test17.v:2435$1315 鈫?n511
+  [AND] $and$testcase/test17/test17.v:2450$1343 鈫?n496
+  [AND] $and$testcase/test17/test17.v:2454$1347 鈫?n492
+  [AND] $and$testcase/test17/test17.v:2455$1348 鈫?n491
+  [AND] $and$testcase/test17/test17.v:2458$1351 鈫?n488
+  [AND] $and$testcase/test17/test17.v:2459$1352 鈫?n487
+  [AND] $and$testcase/test17/test17.v:2460$1353 鈫?n486
+  [AND] $and$testcase/test17/test17.v:2461$1354 鈫?n485
+  [AND] $and$testcase/test17/test17.v:2462$1355 鈫?n484
+  [AND] $and$testcase/test17/test17.v:2464$1357 鈫?n482
+  [AND] $and$testcase/test17/test17.v:2468$1361 鈫?n478
+  [AND] $and$testcase/test17/test17.v:2470$1363 鈫?n476
+  [AND] $and$testcase/test17/test17.v:2471$1364 鈫?n475
+  [AND] $and$testcase/test17/test17.v:2815$1707 鈫?n982
+  [AND] $and$testcase/test17/test17.v:2816$1708 鈫?n981
+  [AND] $and$testcase/test17/test17.v:2819$1712 鈫?n979
+  [AND] $and$testcase/test17/test17.v:2820$1713 鈫?n978
+  [AND] $and$testcase/test17/test17.v:2823$1717 鈫?n976
+  [AND] $and$testcase/test17/test17.v:2826$1720 鈫?n974
+  [AND] $and$testcase/test17/test17.v:2831$1725 鈫?n971
+  [AND] $and$testcase/test17/test17.v:2832$1726 鈫?n970
+  [AND] $and$testcase/test17/test17.v:2833$1727 鈫?n977
+  [AND] $and$testcase/test17/test17.v:2834$1728 鈫?n969
+  [AND] $and$testcase/test17/test17.v:2855$1760 鈫?n949
+  [AND] $and$testcase/test17/test17.v:2857$1763 鈫?n947
+  [AND] $and$testcase/test17/test17.v:2858$1764 鈫?n946
+  [AND] $and$testcase/test17/test17.v:2859$1765 鈫?n945
+  [AND] $and$testcase/test17/test17.v:2862$1770 鈫?n942
+  [AND] $and$testcase/test17/test17.v:2863$1771 鈫?n941
+  [AND] $and$testcase/test17/test17.v:2864$1772 鈫?n940
+  [AND] $and$testcase/test17/test17.v:2865$1773 鈫?n939
+  [AND] $and$testcase/test17/test17.v:2867$1776 鈫?n937
+  [AND] $and$testcase/test17/test17.v:2868$1777 鈫?n936
+  [AND] $and$testcase/test17/test17.v:2881$1798 鈫?n921
+  [AND] $and$testcase/test17/test17.v:2884$1801 鈫?n918
+  [AND] $and$testcase/test17/test17.v:2885$1802 鈫?n2577
+  [AND] $and$testcase/test17/test17.v:2889$1806 鈫?n915
+  [AND] $and$testcase/test17/test17.v:2892$1809 鈫?n912
+  [AND] $and$testcase/test17/test17.v:2894$1811 鈫?n910
+  [AND] $and$testcase/test17/test17.v:2982$1815 鈫?n825
+  [AND] $and$testcase/test17/test17.v:3018$1867 鈫?n1064
+  [AND] $and$testcase/test17/test17.v:3019$1868 鈫?n1063
+  [AND] $and$testcase/test17/test17.v:3020$1869 鈫?n1062
+  [AND] $and$testcase/test17/test17.v:3021$1870 鈫?n1061
+  [AND] $and$testcase/test17/test17.v:3022$1871 鈫?n1060
+  [AND] $and$testcase/test17/test17.v:3023$1872 鈫?n1059
+  [AND] $and$testcase/test17/test17.v:3024$1873 鈫?n1058
+  [AND] $and$testcase/test17/test17.v:3025$1874 鈫?n1057
+  [AND] $and$testcase/test17/test17.v:3026$1875 鈫?n1056
+  [AND] $and$testcase/test17/test17.v:3027$1876 鈫?n1055
+  [AND] $and$testcase/test17/test17.v:3039$1889 鈫?n2891
+  [AND] $and$testcase/test17/test17.v:3120$1937 鈫?n1248
+  [AND] $and$testcase/test17/test17.v:3121$1938 鈫?n1247
+  [AND] $and$testcase/test17/test17.v:3130$1955 鈫?n1241
+  [AND] $and$testcase/test17/test17.v:3135$1961 鈫?n1239
+  [AND] $and$testcase/test17/test17.v:3138$1966 鈫?n1236
+  [AND] $and$testcase/test17/test17.v:3140$1968 鈫?n1231
+  [AND] $and$testcase/test17/test17.v:3152$1985 鈫?n1220
+  [AND] $and$testcase/test17/test17.v:3153$1986 鈫?n1219
+  [AND] $and$testcase/test17/test17.v:3154$1987 鈫?n1218
+  [AND] $and$testcase/test17/test17.v:3157$1990 鈫?n1223
+Result capped at 200 of 1213 item(s).
+#END 14
+#RESPONSE 15
+OK: No. 'n2122' and 'n2116' are not functionally equivalent.
+#END 15
+#RESPONSE 16
+OK: Design written to 'test17_out.v' successfully.
+#END 16

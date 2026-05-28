@@ -1,0 +1,32 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test64'. All responses will be logged to 'test64.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test64/test64.v' successfully.
+  Cells: 35
+  Primary inputs:  n0, n1, n12, n12[1], n12[2], n12[3], n2, n3, n4, n5, n6, n7, n8
+  Primary outputs: n30[0], n20, n22, n30[1], n21, n23
+  Gate breakdown:  {'and': 16, 'not': 7, 'or': 7, 'xor': 5}
+#END 2
+#RESPONSE 3
+OK: Total gates: 35
+Gate breakdown:
+  AND  : 16
+  OR   : 7
+  NOT  : 7
+  NAND : 0
+  NOR  : 0
+  XOR  : 5
+  XNOR : 0
+  BUF  : 0
+  DFF  : 0
+#END 3
+#RESPONSE 4
+OK: Design written to 'testcase/test64/test64_reconstructed.v' successfully.
+#END 4
+#RESPONSE 5
+OK: AND gates: 16
+#END 5
+#RESPONSE 6
+OK: Design written to 'test64_out.v' successfully.
+#END 6

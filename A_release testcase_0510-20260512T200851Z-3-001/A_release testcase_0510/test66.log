@@ -1,0 +1,34 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test66'. All responses will be logged to 'test66.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test66/test66.v' successfully.
+  Cells: 35
+  Primary inputs:  n0, n1, n2, n3, n4, n5, n6, n7, n8
+  Primary outputs: n20, n22, n21, n31, n32, n23
+  Gate breakdown:  {'and': 15, 'dff': 2, 'not': 8, 'or': 6, 'xor': 4}
+#END 2
+#RESPONSE 3
+OK: 'n2' directly drives 12 gate(s).
+  [AND] $and$testcase/test66/test66.v:14$10 鈫?n107
+  [AND] $and$testcase/test66/test66.v:17$13 鈫?n109
+  [AND] $and$testcase/test66/test66.v:18$14 鈫?n110
+  [AND] $and$testcase/test66/test66.v:28$20 鈫?n120
+  [AND] $and$testcase/test66/test66.v:29$21 鈫?n121
+  [AND] $and$testcase/test66/test66.v:30$22 鈫?n122
+  [AND] $and$testcase/test66/test66.v:31$23 鈫?n123
+  [AND] $and$testcase/test66/test66.v:32$24 鈫?n124
+  [AND] $and$testcase/test66/test66.v:33$25 鈫?n125
+  [AND] $and$testcase/test66/test66.v:34$26 鈫?n126
+  [AND] $and$testcase/test66/test66.v:35$27 鈫?n127
+  [AND] $and$testcase/test66/test66.v:6$1 鈫?n100
+#END 3
+#RESPONSE 4
+OK: Inserted 4 buffer(s) on 'n2' to limit fanout to ≤ 4.
+#END 4
+#RESPONSE 5
+OK: Maximum fanout: 4 at n2.
+#END 5
+#RESPONSE 6
+OK: Design written to 'testcase/test66/test66_out.v' successfully.
+#END 6

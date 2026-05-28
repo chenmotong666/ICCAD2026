@@ -1,0 +1,29 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test21'. All responses will be logged to 'test21.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test21/test21.v' successfully.
+  Cells: 653
+  Primary inputs:  n0, n1, n2, n3, n4, n5, n6, n6[1], n6[2], n6[3], n6[4], n6[5], n6[6], n7, n7[1], n7[2], n7[3], n7[4], n7[5], n7[6], n7[7]
+  Primary outputs: n10, n11, n8[0], n8[1], n8[2], n8[3], n8[4], n8[5], n8[6], n8[7], n12, n13, n9
+  Gate breakdown:  {'and': 227, 'dff': 55, 'not': 298, 'or': 65, 'xor': 8}
+#END 2
+#RESPONSE 3
+OK: Total gates: 653
+Gate breakdown:
+  AND  : 227
+  OR   : 65
+  NOT  : 298
+  NAND : 0
+  NOR  : 0
+  XOR  : 8
+  XNOR : 0
+  BUF  : 0
+  DFF  : 55
+#END 3
+#RESPONSE 4
+OK: Inserted 130 buffer(s) across the design to limit PI/cell fanout to <= 4. Maximum observed fanout is now 4.
+#END 4
+#RESPONSE 5
+OK: Design written to 'testcase/test21/test21_out.v' successfully.
+#END 5

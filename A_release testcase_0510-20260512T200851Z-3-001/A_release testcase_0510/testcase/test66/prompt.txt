@@ -1,0 +1,6 @@
+This is the beginning of testcase test66. Please output a copy of the log into test66.log.
+Start this session by opening the Verilog netlist stored at testcase/test66/test66.v.
+There is a primary input n2 that feeds several pieces of logic. Describe its immediate load set and say whether it looks like a fanout concern.
+If n2 is driving too many loads for a maximum fanout target of four, restructure that portion with buffers while preserving behavior.
+After that restructuring, report the largest fanout still reachable downstream of n2.
+Write the updated gate-level Verilog to test66_out.v.

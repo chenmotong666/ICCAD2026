@@ -1,0 +1,6 @@
+This is the beginning of testcase test69. Please output a copy of the log into test69.log.
+Load testcase/test69/test69.v and treat it as the current state.
+I suspect n109 and n110 implement the same local function. Check whether the two internal signals are structurally or functionally identical according to your available analysis.
+Find whether any direct primary-input to primary-output passthroughs exist in this design.
+Which output is supported by the largest amount of fanin logic, and how large is that cone?
+Store the final design in test69_out.v.

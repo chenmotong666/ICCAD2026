@@ -1,0 +1,53 @@
+#RESPONSE 1
+Acknowledged. Initialized testcase 'test05'. All responses will be logged to 'test05.log'. Design state is empty and ready for commands.
+#END 1
+#RESPONSE 2
+OK: Loaded 'top' from 'testcase/test05/test05.v' successfully.
+  Cells: 3806
+  Primary inputs:  n0, n0[10], n0[11], n0[12], n0[1], n0[2], n0[3], n0[4], n0[5], n0[6], n0[7], n0[8], n0[9], n1, n10, n10[10], n10[11], n10[12], n10[13], n10[14], n10[15], n10[1], n10[2], n10[3], n10[4], n10[5], n10[6], n10[7], n10[8], n10[9], n1[10], n1[11], ... (120 more)
+  Primary outputs: n11[0], n12[7], n11[32], n11[31], n11[30], n11[29], n11[28], n11[27], n11[26], n11[25], n11[24], n11[23], n11[22], n11[21], n11[20], n11[19], n11[18], n11[17], n11[16], n11[15], n11[14], n11[13], n11[12], n11[11], n11[10], n11[9], n11[8], n11[7], n11[6], n11[5], n11[4], n11[3], ... (65 more)
+  Gate breakdown:  {'and': 596, 'not': 1403, 'or': 1171, 'xor': 636}
+#END 2
+#RESPONSE 3
+OK: Net 'n5' has fanout 35.
+
+'n5' directly drives 35 gate(s).
+  [AND] $and$testcase/test05/test05.v:640$193 鈫?n3094
+  [AND] $and$testcase/test05/test05.v:673$258 鈫?n3061
+  [AND] $and$testcase/test05/test05.v:676$263 鈫?n3058
+  [AND] $and$testcase/test05/test05.v:677$264 鈫?n3057
+  [AND] $and$testcase/test05/test05.v:679$267 鈫?n3055
+  [AND] $and$testcase/test05/test05.v:680$268 鈫?n3054
+  [AND] $and$testcase/test05/test05.v:682$271 鈫?n3052
+  [AND] $and$testcase/test05/test05.v:683$272 鈫?n3051
+  [AND] $and$testcase/test05/test05.v:684$273 鈫?n3050
+  [AND] $and$testcase/test05/test05.v:686$276 鈫?n3048
+  [AND] $and$testcase/test05/test05.v:689$279 鈫?n3047
+  [AND] $and$testcase/test05/test05.v:691$282 鈫?n3045
+  [AND] $and$testcase/test05/test05.v:694$287 鈫?n3042
+  [AND] $and$testcase/test05/test05.v:695$288 鈫?n3041
+  [AND] $and$testcase/test05/test05.v:698$293 鈫?n3038
+  [AND] $and$testcase/test05/test05.v:701$298 鈫?n3035
+  [AND] $and$testcase/test05/test05.v:702$299 鈫?n3034
+  [AND] $and$testcase/test05/test05.v:703$300 鈫?n3033
+  [AND] $and$testcase/test05/test05.v:706$305 鈫?n3014
+  [AND] $and$testcase/test05/test05.v:708$308 鈫?n3012
+  [AND] $and$testcase/test05/test05.v:709$309 鈫?n3011
+  [AND] $and$testcase/test05/test05.v:710$310 鈫?n3010
+  [AND] $and$testcase/test05/test05.v:713$315 鈫?n3007
+  [AND] $and$testcase/test05/test05.v:715$318 鈫?n3005
+  [AND] $and$testcase/test05/test05.v:720$327 鈫?n3000
+  [AND] $and$testcase/test05/test05.v:723$332 鈫?n2997
+  [AND] $and$testcase/test05/test05.v:724$333 鈫?n2996
+  [AND] $and$testcase/test05/test05.v:725$334 鈫?n2995
+  [AND] $and$testcase/test05/test05.v:729$341 鈫?n2991
+  [AND] $and$testcase/test05/test05.v:732$346 鈫?n2988
+  [AND] $and$testcase/test05/test05.v:733$347 鈫?n2987
+  [AND] $and$testcase/test05/test05.v:734$348 鈫?n2986
+  [NOT] $not$testcase/test05/test05.v:739$3305 鈫?n2981
+  [NOT] $not$testcase/test05/test05.v:882$3420 鈫?n3366
+  [OR] $or$testcase/test05/test05.v:687$277 鈫?n2867
+#END 3
+#RESPONSE 4
+OK: Design written to 'test05_out.v' successfully.
+#END 4
