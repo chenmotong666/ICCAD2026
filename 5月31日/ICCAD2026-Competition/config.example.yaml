@@ -1,0 +1,25 @@
+provider: "openai"  # openai or anthropic
+
+openai:
+  api_key: "<YOUR_OPENAI_API_KEY>"
+  # base_url is optional. Uncomment it when using an OpenAI-compatible gateway.
+  # base_url: "https://example.com/v1"
+  model: "gpt-4o-mini"
+
+anthropic:
+  api_key: "<YOUR_ANTHROPIC_API_KEY>"
+  model: "claude-haiku-4-5"
+
+generation:
+  temperature: 0.2
+  max_output_tokens: 4096
+
+# Set this if yosys is not available on PATH.
+yosys_bin: "yosys"
+
+verbose: true
+
+# Optional deterministic fast path for common direct EDA requests.
+# Set to false if the evaluation policy requires every request to be
+# interpreted through the LLM front-end.
+enable_rule_router: true
