@@ -1,0 +1,2 @@
+﻿"Case","Status","Seconds","LastRun","FailureType","Tokens","PromptTokens","CompletionTokens","RequestCount","ResponseCount","EndCount","LastResponseId","Complete","UnknownCount","FailCount","InternalErrorCount"
+"test40","ok","51.34","2026-06-02 00:22:46","","44763","44426","337","20","20","20","20","true","0","0","0"
