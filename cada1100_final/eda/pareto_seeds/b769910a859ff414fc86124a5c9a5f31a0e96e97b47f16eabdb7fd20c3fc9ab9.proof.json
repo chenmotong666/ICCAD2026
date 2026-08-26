@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "original_digest": "b769910a859ff414fc86124a5c9a5f31a0e96e97b47f16eabdb7fd20c3fc9ab9",
+  "before_digest": "b769910a859ff414fc86124a5c9a5f31a0e96e97b47f16eabdb7fd20c3fc9ab9",
+  "seed_file_sha256": "ad142343a2c7018a663c03be760a88a00a321ddcb99cccb5955d3b85cc262feb",
+  "proof_engine": "abc-cec",
+  "registered_at": "2026-08-18T22:27:17"
+}

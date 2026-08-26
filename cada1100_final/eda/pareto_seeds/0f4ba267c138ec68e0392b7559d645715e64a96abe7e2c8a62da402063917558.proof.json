@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "original_digest": "0f4ba267c138ec68e0392b7559d645715e64a96abe7e2c8a62da402063917558",
+  "before_digest": "0f4ba267c138ec68e0392b7559d645715e64a96abe7e2c8a62da402063917558",
+  "seed_file_sha256": "00eca15922c937881c780568232bf908cb1730cc150080202ba67aa5f66b8d4b",
+  "proof_engine": "partitioned-boundary-cec",
+  "registered_at": "2026-08-18T22:28:57"
+}

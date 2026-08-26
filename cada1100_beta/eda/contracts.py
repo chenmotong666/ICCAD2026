@@ -1,0 +1,81 @@
+"""Typed request and mutation constraints shared by the agent and EDA backend."""
+
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Literal, Optional
+
+
+Scope = Literal["design", "cone", "net"]
+CostMetric = Literal["depth", "gate_count", "fanout"]
+
+
+@dataclass(frozen=True)
+class StyleConstraint:
+    """A persistent primitive-style requirement on a design or one cone."""
+
+    style: str
+    scope: Scope = "design"
+    target: str = ""
+
+    def normalized(self) -> "StyleConstraint":
+        return StyleConstraint(
+            style=self.style.strip().lower().replace("-", "_"),
+            scope=self.scope,
+            target=self.target.strip(),
+        )
+
+
+@dataclass(frozen=True)
+class FanoutConstraint:
+    """A maximum fanout bound, optionally restricted to one buffer tree."""
+
+    max_fanout: int
+    scope: Scope = "design"
+    target: str = ""
+    include_primary_inputs: bool = True
+
+
+@dataclass(frozen=True)
+class CostObjective:
+    """The only metric that should lead candidate selection for a request."""
+
+    metric: CostMetric
+    scope: Scope = "design"
+    target: str = ""
+    direction: Literal["min"] = "min"
+
+
+@dataclass
+class MutationContract:
+    """Validation contract attached to one state-changing user request."""
+
+    preserve_function: bool = True
+    style_constraints: list[StyleConstraint] = field(default_factory=list)
+    fanout_constraint: Optional[FanoutConstraint] = None
+    cost_objective: Optional[CostObjective] = None
+    label: str = ""
+    before_digest: str = ""
+    after_digest: str = ""
+    validated: bool = False
+    validation_detail: str = ""
+
+    def summary(self) -> str:
+        pieces = [f"preserve={int(self.preserve_function)}"]
+        if self.style_constraints:
+            pieces.append(
+                "styles=" + ",".join(
+                    f"{row.scope}:{row.target or '*'}={row.style}"
+                    for row in self.style_constraints
+                )
+            )
+        if self.fanout_constraint is not None:
+            row = self.fanout_constraint
+            pieces.append(
+                f"fanout={row.scope}:{row.target or '*'}<={row.max_fanout}"
+            )
+        if self.cost_objective is not None:
+            row = self.cost_objective
+            pieces.append(f"cost={row.scope}:{row.target or '*'}:{row.metric}")
+        pieces.append(f"validated={int(self.validated)}")
+        return " ".join(pieces)

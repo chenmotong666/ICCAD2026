@@ -1,0 +1,86 @@
+Current time:       Sun Aug 23 23:09:56 2026
+Hostname:           iccad010
+CPU Model:          Intel(R) Xeon(R) Gold 5320H CPU @ 2.40GHz
+CPU Details:        Cores = 8 : Sockets = 15 : Cache Size = 28160 KB : Freq = 2.39 GHz
+OS:                 Linux 4.18.0-553.el8_10.x86_64
+RAM:                251 GB (Free 159 GB)
+Swap:                99 GB (Free  99 GB)
+Work Filesystem:    /project/cad/cad10 mounted to vs1:/niccadata/cad10
+Tmp Filesystem:     / mounted to /dev/mapper/vg_system-lv_root
+Work Disk:          1024 GB (Free 968 GB)
+Tmp Disk:           148 GB (Free 121 GB)
+
+CPU Load: 2%, Ram Free: 159 GB, Swap Free: 99 GB, Work Disk Free: 968 GB, Tmp Disk Free: 121 GB
+# Library-only Design Compiler session (enable_write_lib_mode).
+# Invoked as:  dc_shell-t -f dc_mklib.tcl
+# Required env:
+#   ENG_LIB_DIR     directory containing the Liberty file
+#   ENG_LIB_NAME    Liberty file name (e.g. primitives_full.lib)
+#
+# Writes ${stem}.db next to the .lib.  Must run in a dedicated session:
+# dc/2025.06 rejects write_lib in a compile session (UIL-91) and rejects
+# compile after enable_write_lib_mode (UIL-93).
+enable_write_lib_mode
+Warning: This dc_shell session is for library operations only. You should not perform optimization on the design. Please exit when you are finished with the library operation. (UIL-93)
+1
+set lib_dir $::env(ENG_LIB_DIR)
+/project/cad/cad10/cada1100/820/ICCAD2026-final-submit/engines/lib/dc
+set lib_name $::env(ENG_LIB_NAME)
+primitives_nor_not.lib
+set_app_var search_path [list . $lib_dir]
+. /project/cad/cad10/cada1100/820/ICCAD2026-final-submit/engines/lib/dc
+read_lib [file join $lib_dir $lib_name]
+Reading '/project/cad/cad10/cada1100/820/ICCAD2026-final-submit/engines/lib/dc/primitives_nor_not.lib' ...
+Warning: Line 1, The 'default_fanout_load' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_input_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_cap' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 31, The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 35, The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 1, No 'leakage_power_unit' attribute has been specified for the
+        library. This attribute is needed in technology libraries. (LBDB-238)
+Information: Line 38, Cell 'NOR2', No internal_power information for the 'NOR2' cell. (LBDB-301)
+Warning: Line 56, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 60, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 64, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 68, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 76, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 80, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 84, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 88, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Information: Line 95, Cell 'INV', No internal_power information for the 'INV' cell. (LBDB-301)
+Warning: Line 109, Cell 'INV', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 113, Cell 'INV', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 117, Cell 'INV', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 121, Cell 'INV', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Technology library 'primitives_nor_not' read successfully
+1
+1
+set lib_ref [file rootname [file tail $lib_name]]
+primitives_nor_not
+write_lib $lib_ref -format db -output [file join $lib_dir ${lib_ref}.db]
+Wrote the 'primitives_nor_not' library to '/project/cad/cad10/cada1100/820/ICCAD2026-final-submit/engines/lib/dc/primitives_nor_not.db' successfully.
+1
+exit
+
+Memory usage for this session 100 Mbytes.
+Memory usage for this session including child processes 100 Mbytes.
+CPU usage for this session 3 seconds ( 0.00 hours ).
+Elapsed time for this session 5 seconds ( 0.00 hours ).
+
+Thank you...
+

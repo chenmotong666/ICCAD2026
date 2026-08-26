@@ -1,0 +1,35 @@
+#!/usr/bin/env sh
+DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+export PATH="$DIR/tools/oss-cad-suite/bin:$PATH"
+export YOSYSHQ_ROOT="$DIR/tools/oss-cad-suite"
+# Prefer the +x bundled binary; lib/yosys-abc ships without execute bit.
+if [ -x "$DIR/tools/oss-cad-suite/bin/yosys-abc" ]; then
+  export ABC="$DIR/tools/oss-cad-suite/bin/yosys-abc"
+fi
+export PYTHONHASHSEED=0
+# R42 F1: the PyInstaller onefile bootloader extracts into $TMPDIR; a
+# read-only (or missing) TMPDIR would stop the binary before any
+# #RESPONSE.  Fall back to a writable directory next to the package.
+# R43 M20: last resort $HOME/.cada_tmp covers the all-read-only machine.
+_tmp_ok=0
+if [ -n "${TMPDIR:-}" ] && [ -d "$TMPDIR" ] && [ -w "$TMPDIR" ]; then
+  _tmp_ok=1
+fi
+if [ "$_tmp_ok" -eq 0 ]; then
+  for _cand in "$DIR/.tmp" "${PWD:-.}/.tmp" "${HOME:-}/.cada_tmp"; do
+    [ -n "$_cand" ] || continue
+    if mkdir -p "$_cand" 2>/dev/null && [ -w "$_cand" ]; then
+      export TMPDIR="$_cand"
+      _tmp_ok=1
+      break
+    fi
+  done
+fi
+unset _tmp_ok _cand
+# R43 M22: never exec a missing payload; emit one in-protocol error line so
+# the harness records a response instead of dying silently.
+if [ ! -x "$DIR/bin/cada1100_final.bin" ]; then
+  echo "#RESPONSE 0 binary missing: $DIR/bin/cada1100_final.bin #END 0"
+  exit 3
+fi
+exec "$DIR/bin/cada1100_final.bin" "$@"

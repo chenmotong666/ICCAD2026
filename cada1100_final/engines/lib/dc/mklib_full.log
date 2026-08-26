@@ -1,0 +1,180 @@
+Current time:       Sun Aug 23 23:09:38 2026
+Hostname:           iccad010
+CPU Model:          Intel(R) Xeon(R) Gold 5320H CPU @ 2.40GHz
+CPU Details:        Cores = 8 : Sockets = 15 : Cache Size = 28160 KB : Freq = 2.39 GHz
+OS:                 Linux 4.18.0-553.el8_10.x86_64
+RAM:                251 GB (Free 159 GB)
+Swap:                99 GB (Free  99 GB)
+Work Filesystem:    /project/cad/cad10 mounted to vs1:/niccadata/cad10
+Tmp Filesystem:     / mounted to /dev/mapper/vg_system-lv_root
+Work Disk:          1024 GB (Free 968 GB)
+Tmp Disk:           148 GB (Free 121 GB)
+
+CPU Load: 0%, Ram Free: 159 GB, Swap Free: 99 GB, Work Disk Free: 968 GB, Tmp Disk Free: 121 GB
+# Library-only Design Compiler session (enable_write_lib_mode).
+# Invoked as:  dc_shell-t -f dc_mklib.tcl
+# Required env:
+#   ENG_LIB_DIR     directory containing the Liberty file
+#   ENG_LIB_NAME    Liberty file name (e.g. primitives_full.lib)
+#
+# Writes ${stem}.db next to the .lib.  Must run in a dedicated session:
+# dc/2025.06 rejects write_lib in a compile session (UIL-91) and rejects
+# compile after enable_write_lib_mode (UIL-93).
+enable_write_lib_mode
+Warning: This dc_shell session is for library operations only. You should not perform optimization on the design. Please exit when you are finished with the library operation. (UIL-93)
+1
+set lib_dir $::env(ENG_LIB_DIR)
+/project/cad/cad10/cada1100/820/ICCAD2026-final-submit/engines/lib/dc
+set lib_name $::env(ENG_LIB_NAME)
+primitives_full.lib
+set_app_var search_path [list . $lib_dir]
+. /project/cad/cad10/cada1100/820/ICCAD2026-final-submit/engines/lib/dc
+read_lib [file join $lib_dir $lib_name]
+Reading '/project/cad/cad10/cada1100/820/ICCAD2026-final-submit/engines/lib/dc/primitives_full.lib' ...
+Warning: Line 1, The 'default_fanout_load' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_inout_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_input_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_output_pin_cap' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 31, The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 35, The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 1, No 'leakage_power_unit' attribute has been specified for the
+        library. This attribute is needed in technology libraries. (LBDB-238)
+Information: Line 38, Cell 'AND2', No internal_power information for the 'AND2' cell. (LBDB-301)
+Warning: Line 56, Cell 'AND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 60, Cell 'AND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 64, Cell 'AND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 68, Cell 'AND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 76, Cell 'AND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 80, Cell 'AND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 84, Cell 'AND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 88, Cell 'AND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Information: Line 95, Cell 'OR2', No internal_power information for the 'OR2' cell. (LBDB-301)
+Warning: Line 113, Cell 'OR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 117, Cell 'OR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 121, Cell 'OR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 125, Cell 'OR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 133, Cell 'OR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 137, Cell 'OR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 141, Cell 'OR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 145, Cell 'OR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Information: Line 152, Cell 'NAND2', No internal_power information for the 'NAND2' cell. (LBDB-301)
+Warning: Line 170, Cell 'NAND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 174, Cell 'NAND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 178, Cell 'NAND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 182, Cell 'NAND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 190, Cell 'NAND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 194, Cell 'NAND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 198, Cell 'NAND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 202, Cell 'NAND2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Information: Line 209, Cell 'NOR2', No internal_power information for the 'NOR2' cell. (LBDB-301)
+Warning: Line 227, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 231, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 235, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 239, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 247, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 251, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 255, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 259, Cell 'NOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Information: Line 266, Cell 'XOR2', No internal_power information for the 'XOR2' cell. (LBDB-301)
+Warning: Line 284, Cell 'XOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 288, Cell 'XOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 292, Cell 'XOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 296, Cell 'XOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 304, Cell 'XOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 308, Cell 'XOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 312, Cell 'XOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 316, Cell 'XOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Information: Line 323, Cell 'XNOR2', No internal_power information for the 'XNOR2' cell. (LBDB-301)
+Warning: Line 341, Cell 'XNOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 345, Cell 'XNOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 349, Cell 'XNOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 353, Cell 'XNOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 361, Cell 'XNOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 365, Cell 'XNOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 369, Cell 'XNOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 373, Cell 'XNOR2', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Information: Line 380, Cell 'INV', No internal_power information for the 'INV' cell. (LBDB-301)
+Warning: Line 394, Cell 'INV', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 398, Cell 'INV', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 402, Cell 'INV', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 406, Cell 'INV', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Information: Line 413, Cell 'BUF', No internal_power information for the 'BUF' cell. (LBDB-301)
+Warning: Line 427, Cell 'BUF', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 431, Cell 'BUF', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 435, Cell 'BUF', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Warning: Line 439, Cell 'BUF', pin 'Y', The 'index_1' attribute has size 1, which is not 
+        used for any purpose with its associated variable. (LBDB-275)
+Technology library 'primitives_full' read successfully
+1
+1
+set lib_ref [file rootname [file tail $lib_name]]
+primitives_full
+write_lib $lib_ref -format db -output [file join $lib_dir ${lib_ref}.db]
+Wrote the 'primitives_full' library to '/project/cad/cad10/cada1100/820/ICCAD2026-final-submit/engines/lib/dc/primitives_full.db' successfully.
+1
+exit
+
+Memory usage for this session 101 Mbytes.
+Memory usage for this session including child processes 101 Mbytes.
+CPU usage for this session 3 seconds ( 0.00 hours ).
+Elapsed time for this session 6 seconds ( 0.00 hours ).
+
+Thank you...
+

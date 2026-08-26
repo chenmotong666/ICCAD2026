@@ -1,0 +1,127 @@
+library(primitives_nand_not) {
+  delay_model : table_lookup;
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  current_unit : "1mA";
+  pulling_resistance_unit : "1kohm";
+  capacitive_load_unit (1, pf);
+  slew_upper_threshold_pct_rise : 80.0;
+  slew_lower_threshold_pct_rise : 20.0;
+  slew_upper_threshold_pct_fall : 80.0;
+  slew_lower_threshold_pct_fall : 20.0;
+  input_threshold_pct_rise : 50.0;
+  input_threshold_pct_fall : 50.0;
+  output_threshold_pct_rise : 50.0;
+  output_threshold_pct_fall : 50.0;
+  nom_process : 1.0;
+  nom_temperature : 25.0;
+  nom_voltage : 1.0;
+  default_operating_conditions : TYP;
+  operating_conditions(TYP) {
+    process : 1.0;
+    temperature : 25.0;
+    voltage : 1.0;
+    tree_type : balanced_tree;
+  }
+  default_cell_leakage_power : 0.0;
+  default_leakage_power_density : 0.0;
+
+  lu_table_template(delay_template_1x1) {
+    variable_1 : input_net_transition;
+    index_1 ("1000.0");
+  }
+  power_lut_template(energy_template_1x1) {
+    variable_1 : input_transition_time;
+    index_1 ("1000.0");
+  }
+
+  cell(NAND2) {
+    area : 2.0;
+    pin(A) {
+      direction : input;
+      capacitance : 1.0;
+    }
+    pin(B) {
+      direction : input;
+      capacitance : 1.0;
+    }
+    pin(Y) {
+      direction : output;
+      function : "!(A * B)";
+      max_capacitance : 1000.0;
+      timing() {
+        related_pin : "A";
+        timing_sense : negative_unate;
+        cell_rise(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("1.0");
+        }
+        cell_fall(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("1.0");
+        }
+        rise_transition(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("0.1");
+        }
+        fall_transition(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("0.1");
+        }
+      }
+      timing() {
+        related_pin : "B";
+        timing_sense : negative_unate;
+        cell_rise(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("1.0");
+        }
+        cell_fall(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("1.0");
+        }
+        rise_transition(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("0.1");
+        }
+        fall_transition(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("0.1");
+        }
+      }
+    }
+  }
+
+  cell(INV) {
+    area : 2.0;
+    pin(A) {
+      direction : input;
+      capacitance : 1.0;
+    }
+    pin(Y) {
+      direction : output;
+      function : "!A";
+      max_capacitance : 1000.0;
+      timing() {
+        related_pin : "A";
+        timing_sense : negative_unate;
+        cell_rise(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("1.0");
+        }
+        cell_fall(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("1.0");
+        }
+        rise_transition(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("0.1");
+        }
+        fall_transition(delay_template_1x1) {
+          index_1 ("0.0");
+          values ("0.1");
+        }
+      }
+    }
+  }
+}

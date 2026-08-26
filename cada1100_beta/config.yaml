@@ -1,0 +1,30 @@
+# ICCAD 2026 Problem A local example configuration.
+# The evaluation environment supplies its own configuration file.
+# Never commit a real API key here; prefer environment variables or an ignored
+# local copy when developing.
+
+provider: "anthropic"
+
+openai:
+  api_key: "<YOUR_OPENAI_API_KEY>"
+  # base_url: ""               # optional OpenAI-compatible gateway
+  model: "gpt-4o-mini"
+
+anthropic:
+  api_key: "<YOUR_ANTHROPIC_API_KEY>"
+  model: "claude-haiku-4-5"
+
+generation:
+  temperature: 0.2
+  max_output_tokens: 4096
+
+# Optional: path to yosys binary (default: "yosys" from PATH)
+# yosys_bin: "/usr/bin/yosys"
+
+# Optional verification timeout tuning:
+# verification:
+#   yosys_timeout_sec: 240
+#   equiv_timeout_sec: 240
+#   cone_timeout_sec: 20
+#   robust_total_timeout_sec: 240
+#   large_cone_threshold: 5000
