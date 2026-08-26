@@ -1,3 +1,0 @@
-﻿"Case","Status","Seconds","LastRun","FailureType","Tokens","PromptTokens","CompletionTokens","RequestCount","ResponseCount","EndCount","LastResponseId","Complete","UnknownCount","FailCount","InternalErrorCount"
-"test33","ok","131.44","2026-05-31 15:02:03","","57017","56664","353","20","20","20","20","true","0","0","0"
-"test36","failed","43.23","2026-05-31 15:03:03","APP_UNSUPPORTED","54038","53611","427","20","20","20","20","true","0","1","0"

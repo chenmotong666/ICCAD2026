@@ -1,7 +1,0 @@
-This is the beginning of testcase test51. Please output a copy of the log into test51.log.
-Please load the design from the file test51.v located in the directory testcase/test51/.
-Please count all the gates in this design and report the total count broken down by gate type (AND, OR, NOT, NAND, NOR, XOR, XNOR, BUF, DFF).
-How many primary inputs and primary outputs does this design have?
-Please list all the primary inputs of this design with their bit widths.
-List all primary outputs of this design with their bit widths.
-Please write the current design to the output file test51_out.v.

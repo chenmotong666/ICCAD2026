@@ -1,7 +1,0 @@
-This is the beginning of testcase test53. Please output a copy of the log into test53.log.
-Please load the design from the file test53.v located in the directory testcase/test53/.
-Please count all the gates in this design and report the total count broken down by gate type (AND, OR, NOT, NAND, NOR, XOR, XNOR, BUF, DFF).
-Determine whether wire n100 is a cut between any primary input and any primary output. Report yes or no.
-Find all paths of length 0 (direct wire connections from PI to PO).
-Determine whether signals n109 and n110 are functionally equivalent.
-Please write the current design to the output file test53_out.v.

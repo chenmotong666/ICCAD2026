@@ -1,7 +1,0 @@
-This is the beginning of testcase test54. Please output a copy of the log into test54.log.
-Please load the design from the file test54.v located in the directory testcase/test54/.
-Please count all the gates in this design and report the total count broken down by gate type (AND, OR, NOT, NAND, NOR, XOR, XNOR, BUF, DFF).
-Please insert a BUF gate on signal n2 so that each load of n2 is driven through a dedicated buffer. Ensure the design functionality does not change.
-How many BUF gates were added by the buffer insertion just performed?
-What is the fanout of primary input n2? List every gate that n2 drives directly.
-Please write the current design to the output file test54_out.v.

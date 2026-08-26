@@ -1,6 +1,0 @@
-This is the beginning of testcase test65. Please output a copy of the log into test65.log.
-Bring the small circuit for this case into memory from testcase/test65/test65.v before answering anything about it.
-Give me a compact inventory of the netlist: total primitive instances, the mix of primitive kinds, and the visible input/output interface.
-I want to understand the logic feeding n20: identify a deepest chain from an external input to n20 and explain the gate-level length of that chain.
-Now look at n20 and n21 together. Tell me which internal logic, if any, is reused by both of their fanin cones.
-Save the currently loaded design as test65_out.v.

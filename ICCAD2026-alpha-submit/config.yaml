@@ -1,0 +1,30 @@
+# ICCAD 2026 Problem A — Configuration
+# Select your LLM provider: "openai" or "anthropic"
+provider: "anthropic"
+
+openai:
+  # api_key: "sk-..."          # or set OPENAI_API_KEY env var
+  # base_url: ""               # optional, for OpenAI-compatible gateways
+  model: "gpt-4o-mini"
+
+anthropic:
+  # api_key: "sk-ant-..."      # or set ANTHROPIC_API_KEY env var
+  model: "claude-haiku-4-5"
+
+generation:
+  temperature: 0.2
+  max_output_tokens: 4096
+
+# Optional: path to yosys binary (default: "yosys" from $PATH)
+# yosys_bin: "/usr/bin/yosys"
+
+# Optional: enable verbose debug output
+# verbose: true
+
+# Optional: verification timeout tuning
+# verification:
+#   yosys_timeout_sec: 240
+#   equiv_timeout_sec: 120
+#   cone_timeout_sec: 20
+#   robust_total_timeout_sec: 240
+#   large_cone_threshold: 5000

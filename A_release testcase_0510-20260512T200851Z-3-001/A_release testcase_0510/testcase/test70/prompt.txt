@@ -1,6 +1,0 @@
-This is the beginning of testcase test70. Please output a copy of the log into test70.log.
-For the final synthetic case, read testcase/test70/test70.v into the system.
-Do a combined cleanup pass: remove logic that cannot influence any primary output, then collapse any inverter-inverter chains that are safe to bypass.
-After the cleanup, report the current design-wide maximum combinational depth and the current total gate breakdown.
-Check, using whatever equivalence mechanism is available, whether the current design still matches the originally loaded netlist.
-Export the cleaned design to test70_out.v.

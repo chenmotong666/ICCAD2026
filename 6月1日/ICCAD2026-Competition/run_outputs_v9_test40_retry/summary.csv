@@ -1,2 +1,0 @@
-﻿"Case","Status","Seconds","LastRun","FailureType","Tokens","PromptTokens","CompletionTokens","RequestCount","ResponseCount","EndCount","LastResponseId","Complete","UnknownCount","FailCount","InternalErrorCount"
-"test40","failed","45.03","2026-06-01 20:12:41","APP_RUNTIME","42378","42044","334","20","20","20","20","true","0","1","0"

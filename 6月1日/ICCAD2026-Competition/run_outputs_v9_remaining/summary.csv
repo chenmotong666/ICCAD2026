@@ -1,6 +1,0 @@
-﻿"Case","Status","Seconds","LastRun","FailureType","Tokens","PromptTokens","CompletionTokens","RequestCount","ResponseCount","EndCount","LastResponseId","Complete","UnknownCount","FailCount","InternalErrorCount"
-"test29","ok","27.35","2026-06-01 19:34:39","","20879","20715","164","11","11","11","11","true","0","0","0"
-"test30","ok","21.18","2026-06-01 19:35:00","","20846","20684","162","11","11","11","11","true","0","0","0"
-"test35","ok","68.96","2026-06-01 19:36:09","","41958","41609","349","20","20","20","20","true","0","0","0"
-"test37","timeout","923.37","2026-06-01 19:52:27","TIMEOUT","0","0","0","20","15","15","15","false","0","0","0"
-"test40","failed","53.85","2026-06-01 19:37:03","APP_RUNTIME","41784","41447","337","20","20","20","20","true","0","2","0"

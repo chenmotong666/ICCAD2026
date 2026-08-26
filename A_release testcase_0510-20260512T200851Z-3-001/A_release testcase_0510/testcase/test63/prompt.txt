@@ -1,6 +1,0 @@
-This is the beginning of testcase test63. Please output a copy of the log into test63.log.
-Please load the design from the file test63.v located in the directory testcase/test63/.
-Please count all the gates in this design and report the total count broken down by gate type (AND, OR, NOT, NAND, NOR, XOR, XNOR, BUF, DFF).
-Try to replace all XNOR gates in this design with equivalent NOR-only implementations. Ensure the design functionality does not change.
-Report the total NOR gate count after replacing all XNOR gates.
-Please write the current design to the output file test63_out.v.
