@@ -449,7 +449,10 @@ def probe_host_tools(
     global _PROBE
     if _PROBE is not None and not force:
         return _PROBE
-    deadline = time.monotonic() + probe_deadline_sec()
+    # R46 G14: measure probe wall time so license-queue waits are visible
+    # in post-run traces without any stdout impact.
+    _probe_t0 = time.monotonic()
+    deadline = _probe_t0 + probe_deadline_sec()
 
     def _budget_left() -> float:
         return deadline - time.monotonic()
@@ -495,7 +498,9 @@ def probe_host_tools(
         and not in_pytest
     ):
         print(
-            "[host_probe] lec became available after earlier miss",
+            f"[host_probe] lec became available after earlier miss "
+            f"(probe_wall_s={time.monotonic() - _probe_t0:.1f}, "
+            f"force={int(bool(force))})",
             file=sys.stderr,
         )
     _LAST_LEC = bool(lec_ok)

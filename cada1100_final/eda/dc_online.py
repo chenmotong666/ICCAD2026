@@ -42,6 +42,12 @@ _DC_LICENSE_FAIL_RE = re.compile(
     re.IGNORECASE,
 )
 _DC_CELL_CAP = 8000
+# R47 E1: plain `compile` on the real 14927-cell test24 shape converged in
+# 63.1s (depth 25->17, no UIL/OPT) inside a 240s window — reopening the
+# 8k-15k band for the UNSTYLED deep path (compile is forced there by the
+# deep_band selection in _run_dc; compile_ultra at 15k took 185.6s and
+# stays excluded via the 90s run timeout).
+_DC_COMPILE_CELL_CAP = 15000
 _DC_CELL_FLOOR = 3000
 # R35 C1/C4: unstyled mid-shallow bands proven in 90s (dc_budget_sweep
 # 1747/41 compile_ultra 61s; 3–8k compile_ultra 74s wrote a primitive
@@ -184,9 +190,17 @@ def dc_license_preflight(dc_bin: str) -> bool:
     """
 
     def _record(reason: str, started: float) -> None:
-        _LAST_DC_PREFLIGHT.update(
-            reason=reason, wall_s=round(time.monotonic() - started, 3)
-        )
+        wall = round(time.monotonic() - started, 3)
+        _LAST_DC_PREFLIGHT.update(reason=reason, wall_s=wall)
+        # R46 G14: every preflight outcome lands on stderr with its wall
+        # time, so license-queue latency is measurable post-run (G-series
+        # discipline: nothing enters stdout/#RESPONSE).
+        if "PYTEST_CURRENT_TEST" not in os.environ:
+            print(
+                f"[PROBE] kind=dc phase=preflight reason={reason} "
+                f"wall_s={wall}",
+                file=sys.stderr,
+            )
 
     if dc_skip_preflight():
         _LAST_DC_PREFLIGHT.update(reason="ok", wall_s=0.0)
@@ -351,7 +365,15 @@ def dc_worth_decision(backend) -> dict:
         info["cells"] = cells
         info["depth"] = depth
         info["xor_density"] = xor_density
-        if cells > _DC_CELL_CAP:
+        # R47 E1: the unstyled deep band extends to 15k cells on plain
+        # compile (63.1s measured on the real 14927-cell test24 shape with
+        # depth 25->17).  Everything else above the 8k cap stays closed.
+        deep_large = (
+            style == ""
+            and depth >= 100
+            and cells <= _DC_COMPILE_CELL_CAP
+        )
+        if cells > _DC_CELL_CAP and not deep_large:
             info["reason"] = "cells_cap"
             return info
         narrow = (

@@ -74,6 +74,11 @@ TOOL_SPECS: list[dict] = [
      "parameters": {}},
     {"name": "largest_output_cone",  "description": "Output with largest cone",
      "parameters": {}},
+    {"name": "smallest_output_cone",  "description": "Output with smallest cone",
+     "parameters": {}},
+    {"name": "top_k_largest_cones",  "description": "Rank outputs by cone size, largest k first",
+     "parameters": {"k": {"type": "integer", "description": "how many outputs to list (2-16)"}},
+     "required": ["k"]},
     {"name": "list_primary_inputs_with_widths",  "description": "List PI names+widths",
      "parameters": {}},
     {"name": "list_primary_outputs_with_widths", "description": "List PO names+widths",
@@ -92,6 +97,8 @@ TOOL_SPECS: list[dict] = [
     {"name": "optimize_design_depth", "description": "Design-wide depth reduction",
      "parameters": {}},
     {"name": "deepest_output_cone",   "description": "Output with deepest cone",
+     "parameters": {}},
+    {"name": "shallowest_output_cone",   "description": "Output with shallowest cone",
      "parameters": {}},
     {"name": "gate_on_max_depth_path", "description": "Check gate on any maximum-depth path",
      "parameters": {"name": {"type": "string"}}, "required": ["name"]},
@@ -299,6 +306,8 @@ _TOOL_REGISTRY: dict[str, dict] = {
     "last_operation_count":      {"method_name": "last_operation_count",      "category": _TC.SUMMARY, "history_limit": 300},
     "primary_io_counts":         {"method_name": "primary_io_counts",         "category": _TC.SUMMARY, "history_limit": 300},
     "largest_output_cone":       {"method_name": "largest_output_cone",       "category": _TC.SUMMARY, "history_limit": 300},
+    "smallest_output_cone":      {"method_name": "smallest_output_cone",      "category": _TC.SUMMARY, "history_limit": 300},
+    "top_k_largest_cones":       {"method_name": "top_k_largest_cones",       "category": _TC.CONE,   "history_limit": 300},
     "list_primary_inputs_with_widths":  {"method_name": "list_primary_inputs_with_widths",  "category": _TC.SUMMARY, "history_limit": 300},
     "list_primary_outputs_with_widths": {"method_name": "list_primary_outputs_with_widths", "category": _TC.SUMMARY, "history_limit": 300},
     "get_max_depth":          {"method_name": "get_max_depth",          "category": _TC.DEPTH,   "history_limit": 300},
@@ -306,6 +315,7 @@ _TOOL_REGISTRY: dict[str, dict] = {
     "max_design_depth":       {"method_name": "max_design_depth",       "category": _TC.DEPTH,   "history_limit": 300},
     "optimize_design_depth":  {"method_name": "optimize_design_depth",  "category": _TC.OPTIMIZE,"history_limit": 600},
     "deepest_output_cone":    {"method_name": "deepest_output_cone",    "category": _TC.DEPTH,   "history_limit": 300},
+    "shallowest_output_cone": {"method_name": "shallowest_output_cone", "category": _TC.DEPTH,   "history_limit": 300},
     "gate_on_max_depth_path": {"method_name": "gate_on_max_depth_path", "category": _TC.DEPTH,   "history_limit": 300},
     "count_outputs_depth_gt": {"method_name": "count_outputs_depth_gt", "category": _TC.DEPTH,   "history_limit": 300},
     "max_pi_to_dff_depth":    {"method_name": "max_pi_to_dff_depth",    "category": _TC.DEPTH,   "history_limit": 300},
@@ -445,13 +455,14 @@ _DEPTH_TOOLS = frozenset({
     "read_design", "get_max_depth", "max_fanin_depth", "max_design_depth",
     "deepest_output_cone", "gate_on_max_depth_path",
     "count_outputs_depth_gt", "max_pi_to_dff_depth",
-    "max_register_to_register_depth",
+    "max_register_to_register_depth", "shallowest_output_cone",
 })
 
 _CONE_TOOLS = frozenset({
     "read_design", "report_cone_size", "cone_gate_breakdown",
     "transitive_fanin", "transitive_fanout", "report_large_cones",
     "largest_output_cone", "shared_fanin_cones", "immediate_successors",
+    "smallest_output_cone", "top_k_largest_cones",
 })
 
 _FANOUT_TOOLS = frozenset({
@@ -501,6 +512,8 @@ _CONST_REPORT_TOOLS = frozenset({
 _SUMMARY_TOOLS = frozenset({
     "read_design", "design_summary", "gate_count_breakdown",
     "primary_io_counts", "largest_output_cone", "deepest_output_cone",
+    "smallest_output_cone", "shallowest_output_cone",
+    "top_k_largest_cones",
     "optimization_stats",
 })
 
@@ -510,7 +523,8 @@ _POST_CLEANUP_REPORT_TOOLS = frozenset({
 
 _CONE_SIZE_TOOLS = frozenset({
     "read_design", "largest_output_cone", "report_cone_size",
-    "cone_gate_breakdown", "report_large_cones",
+    "cone_gate_breakdown", "report_large_cones", "smallest_output_cone",
+    "top_k_largest_cones",
 })
 
 _CONE_COUNT_TOOLS = frozenset({
@@ -519,6 +533,7 @@ _CONE_COUNT_TOOLS = frozenset({
 
 _CONE_LARGE_TOOLS = frozenset({
     "read_design", "report_large_cones", "largest_output_cone",
+    "top_k_largest_cones",
 })
 
 _CONE_LIST_TOOLS = frozenset({
@@ -554,6 +569,7 @@ _DEPTH_OUTPUT_TOOLS = frozenset({
 _DEPTH_DESIGN_TOOLS = frozenset({
     "read_design", "max_design_depth", "deepest_output_cone",
     "gate_on_max_depth_path", "max_fanin_depth", "get_max_depth",
+    "shallowest_output_cone",
 })
 
 _DEPTH_THRESHOLD_TOOLS = frozenset({
@@ -742,7 +758,7 @@ _DEPTH_OPT_TOOLS = frozenset({
     "abc_optimize_full_design", "balance_associative_trees",
     "max_design_depth", "max_fanin_depth", "get_max_depth",
     "deepest_output_cone", "count_outputs_depth_gt",
-    "max_register_to_register_depth",
+    "max_register_to_register_depth", "shallowest_output_cone",
     "gate_count_breakdown", "check_original_equiv",
 })
 
